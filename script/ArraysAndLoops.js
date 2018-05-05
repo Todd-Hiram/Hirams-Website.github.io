@@ -105,3 +105,34 @@ let counter = 1;
     console.log("Count down to " + counter);
     counter++;
     } while(counter <= 10);
+
+//Parameters
+function whatsBetter(one, two) {
+    console.log(one + " is better than " + two);
+}
+
+whatsBetter("counting crows", "chili peppers");
+whatsBetter("Disneyland", "Disney World");
+whatsBetter("The Office", "Psych");
+
+//Associative Arrays
+let favs = new Array();
+  favs["show"] = "The Office";
+  favs["food"] = "Pizza";
+  
+  console.log("Favorite TV show is " + favs["show"]);
+  console.log("Favorite food is " + favs["food"]);
+
+//Conditional statement
+let num = 2;
+
+if (num == 1) {
+    alert("The number is one");
+} else if (num == 2) {
+    alert("The number is two");
+} else if (num == 3) {
+    alert("The number is three");
+} else {
+    alert("Number is too large!");
+}
+
