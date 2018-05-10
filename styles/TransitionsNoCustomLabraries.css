@@ -11,14 +11,24 @@
         margin: 10px;
     }
 
-    .parent1 {
+    .parent {
         display: inline-block;
         width: 250px;
     }
 
+/*
     .parent2 {
         display: inline-block;
         width: 250px;
+    }
+*/
+
+    h2 {
+        color: #430711;
+        font-family: sans-serif;
+        font-size: 25px;
+        padding: 30px;
+        text-align: center;
     }
 
     .box1 {
