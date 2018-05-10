@@ -40,6 +40,9 @@
     }
 
     .box {
+        .container:hover & {
+            transform: scale(4);
+        }
         margin: 50px auto;
         height: 40px;
         width: 80px;
