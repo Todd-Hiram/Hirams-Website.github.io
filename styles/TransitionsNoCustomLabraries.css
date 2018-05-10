@@ -32,11 +32,12 @@
     }
 
     .transition1 {
-
+        background-color: brown;
     }
 
     .transition2 {
-
+        background-color: chocolate;
+        transition: all 1s;
     }
 
     .box {
