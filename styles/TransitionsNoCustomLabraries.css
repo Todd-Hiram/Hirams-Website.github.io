@@ -31,12 +31,19 @@
         text-align: center;
     }
 
-    .box1 {
+    .transition1 {
 
     }
 
-    .box2 {
+    .transition2 {
 
+    }
+
+    .box {
+        margin: 50px auto;
+        height: 40px;
+        width: 80px;
+        border-radius: 10px;
     }
 
     /*----------- HEADER --------------*/
