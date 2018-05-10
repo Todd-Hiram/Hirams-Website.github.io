@@ -20,6 +20,7 @@
         border-radius: 50%;
         background-color: #FFAB00;
         position: absolute;
+/*
         -webkit-transition-property: width height background-color font-size left top color;
         -webkit-transition-duration: 2s;
         -webkit-transition-delay: 2s;
@@ -28,6 +29,7 @@
         transition-duration: 2s;
         transition-delay: 2s;
         transition-timing-function: linear;
+*/
     }
 
 /*
