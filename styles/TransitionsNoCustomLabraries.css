@@ -1,0 +1,37 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    .parent {
+        width: 250px;
+        height: 125px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        font-size: 20px;
+        border-radius: 150%;
+        position: absolute;
+        -webkit-transition-property: width height background-color font-size left top color;
+        -webkit-transition-duration: 2s;
+        -webkit-transition-delay: 1s;
+        -webkit-transition-timing-function: linear;
+        transition-property: width height background-color font-size left top color;
+        transition-duration: 2s;
+        transition-delay: 1s;
+        transition-timing-function: linear;
+    }
+
+    /*----------- HEADER --------------*/
+
+
+    /*----------- NAVIGATION --------------*/
+
+
+    /*----------- MAIN --------------*/
+
+
+    /*----------- FOOTER --------------*/
+
+} /* end of media query */
