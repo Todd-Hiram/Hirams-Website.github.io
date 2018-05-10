@@ -20,7 +20,7 @@
         border-radius: 50%;
         background-color: #FFAB00;
         position: relative;
-        top: 5px;
+        top: 20px;
         -webkit-transition-property: width height background-color font-size left top color;
         -webkit-transition-duration: 2s;
         -webkit-transition-delay: 2s;
