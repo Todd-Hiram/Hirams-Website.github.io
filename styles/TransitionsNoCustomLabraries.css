@@ -1,64 +1,137 @@
-/* 64em is also 1028px (if basefont is 16px) */
-@media only screen and (min-width: 64rem) {
 
-    h2 {
-        text-align: center;
-        margin:auto;
-    }
+* {
+    margin: 50px;
+    box-sizing: border-box;
+    background-color: #F0DCB9;
+}
 
-    /*----------- BODY --------------*/
-    .container {
-        margin: 10px;
-    }
+h3 {
+    text-align: center;
+    margin:auto;
+}
 
-    .parent {
-        display: inline-block;
-        width: 250px;
-    }
+.transition {
+    margin: 15px;
+}
 
-/*
-    .parent2 {
-        display: inline-block;
-        width: 250px;
-    }
-*/
+.transition {
+    display: inline;
+    width: 300px;
+}
 
-    h2 {
-        color: #430711;
-        font-family: sans-serif;
-        font-size: 25px;
-        padding: 30px;
-        text-align: center;
-    }
+h1 {
+    color: #FF5100;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+    font-weight: 200;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
 
-    .transition1 {
-        background-color: brown;
-    }
+.sphere {
+    border-radius: 50%;
+    height: 100px;
+    margin: 100px auto;
+    width: 100px;
+}
 
-    .transition2 {
-        background-color: chocolate;
+.sphere1 {
+    background: #940D0B;
+}
+
+.sphere2 {
+    background: #105761;
         transition: all 1s;
-    }
+}
 
-    .box {
-        .container:hover & {
-            transform: scale(4);
-        }
-        margin: 50px auto;
-        height: 40px;
-        width: 80px;
-        border-radius: 10px;
-    }
+.sphere:hover {
+    transform: scale(4);
+}
 
-    /*----------- HEADER --------------*/
+/*--------- TRANSITION DEMONSTRATION -------*/
 
 
-    /*----------- NAVIGATION --------------*/
+nav {
+    text-align: center;
+    margin:auto;
+}
+
+.bar {
+    margin: 10px 0px;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+.bar1, .bar2, .bar3, .bar4, .bar5 {
+    width: 5em;
+    height: 5em;
+}
+
+.bar1 {
+    background-color: #940D0B;
+    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+}
+
+.bar2 {
+    background-color: #FF5100;
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+}
+
+.bar3 {
+    background-color: #105761;
+    transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+}
+
+.bar4 {
+    background-color: #FF5100;
+    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+}
+
+.bar5 {
+    background-color: #940D0B;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+}
+
+.bar:hover {
+    width: 300px;
+}
+
+/*--------- Cubic-bezier ---------*/
+
+.bezier {
+    width: 5em;
+    height: 5em;
+    background-color: #105761;
+    transition: width 2s;
+    transition-timing-function: cubic-bezier(0,.8,.96,.07);
+}
+
+.bezier:hover {
+    width: 300px;
+}
+
+/*--------- Transition & Transform ---------*/
+.transform {
+    width: 5em;
+    height: 5em;
+    background-color: #FF5100;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transform: width 2s, height 2s, -webkit-transform 2s;
+}
+
+.box:hover {
+    width: 300px;
+    height: 300px;
+    -webkit-transition: rotate(180deg);
+    transform: rotate(180deg);
+}
 
 
-    /*----------- MAIN --------------*/
 
 
-    /*----------- FOOTER --------------*/
-
-} /* end of media query */
