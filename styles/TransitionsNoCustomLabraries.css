@@ -132,6 +132,20 @@ nav {
     transform: rotate(180deg);
 }
 
+/*--------- Transition delay ---------*/
+.delay {
+    width: 5em;
+    height: 5em;
+    background-color: #940D0B;
+    -webkit-transition-property: width;
+    -webkit-transition-duration: 5s;
+    -webkit-transition-delay: 2s;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-delay: 2s;
+}
 
-
+.box:hover {
+    width: 300px;
+}
 
