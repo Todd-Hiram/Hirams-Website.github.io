@@ -6,6 +6,8 @@
 }
 
 h3 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 40px;
     text-align: center;
     margin:auto;
 }
@@ -22,6 +24,7 @@ h3 {
 h1 {
     color: #FF5100;
     font-family: 'Amatic SC', cursive;
+    font-weight: 25px;
     font-size: 40px;
     font-weight: 200;
     padding: 20px;
@@ -49,9 +52,55 @@ h1 {
     transform: scale(4);
 }
 
+/*--------- Animation color-change ---------*/
+@-webkit-keyframes square-to-circle {
+    0% {
+        border-radius: 0 0 0 0;
+        background-color: #940D0B;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        border-radius: 50% 0 0 0;
+        background-color: #105761;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        border-radius: 50% 50% 0 0;
+        background-color: #FF5100;
+        transform: rotate(90deg);
+    }
+
+    75% {
+        border-radius: 50% 50% 50% 0;
+        background-color: #940D0B;
+        transform: rotate(135deg);
+    }
+
+    100% {
+        border-radius: 50%;
+        background-color: #105761;
+        transform: rotate(180deg);
+    }
+}
+
+.sphere3 {
+    margin:auto;
+    width: 150px;
+    height: 150px;
+    outline: 1px solid transparent;
+    -webkit-animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    -moz-animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    -ms-animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    -o-animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 /*--------- TRANSITION DEMONSTRATION -------*/
-
-
 nav {
     text-align: center;
     margin:auto;
@@ -149,3 +198,111 @@ nav {
     width: 300px;
 }
 
+/*--------- Transform & Animation ---------*/
+.dot {
+    border-radius: 50%;
+    height: 20px;
+    margin: 20px auto;
+    width: 20px;
+}
+
+.dots {
+	width: 500px;
+	padding-top: 100px;
+	margin: 0 auto;
+}
+
+.dot1 {
+	-webkit-animation:right 1s infinite ease-in-out;
+    background-color: #940D0B;
+    -moz-animation: right 1s infinite ease-in-out;
+    animation: right 1s infinite ease-in-out;
+}
+
+.dot2 {
+	-webkit-animation: left 1.1s infinite ease-in-out;
+	background-color: #FF5100;
+	-moz-animation: left 1.1s infinite ease-in-out;
+	animation: left 1.1s infinite ease-in-out;
+}
+
+.dot3 {
+	-webkit-animation: right 1.05s infinite ease-in-out;
+    background-color: #105761;
+    -moz-animation: right 1.05s infinite ease-in-out;
+	animation: right 1.05s infinite ease-in-out;
+}
+
+.dot4 {
+	-webkit-animation: left 1.15s infinite ease-in-out;
+    background-color: #940D0B;
+    -moz-animation: left 1.15s infinite ease-in-out;
+	animation: left 1.15s infinite ease-in-out;
+}
+
+.dot5 {
+	-webkit-animation: right 1.1s infinite ease-in-out;
+    background-color: #FF5100;
+    -moz-animation: right 1.1s infinite ease-in-out;
+	animation: right 1.1s infinite ease-in-out;
+}
+
+@-webkit-keyframes left {
+	0% {
+		-webkit-transform: translate(25px);
+	}
+	50% {
+		-webkit-transform: translate(-25px);
+	}
+	100% {
+		-webkit-transform: translate(25px);
+	}
+}
+
+@-moz-keyframes right {
+	0% {
+		-moz-transform: translate(-25px);
+	}
+	50% {
+		-moz-transform: translate(25px);
+	}
+	100% {
+		-moz-transform: translate(-25px);
+	}
+}
+
+@-moz-keyframes left {
+	0% {
+		-moz-transform: translate(25px);
+	}
+	50% {
+		-moz-transform: translate(-25px);
+	}
+	100% {
+		-moz-transform: translate(25px);
+	}
+}
+
+@keyframes right {
+	0% {
+		transform: translate(-25px);
+	}
+	50% {
+		transform: translate(25px);
+	}
+	100% {
+		transform: translate(-25px);
+	}
+}
+
+@keyframes left {
+	0% {
+		transform: translate(25px);
+	}
+	50% {
+		transform: translate(-25px);
+	}
+	100% {
+		transform: translate(25px);
+	}
+}
