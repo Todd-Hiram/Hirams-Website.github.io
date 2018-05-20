@@ -63,8 +63,8 @@ class Wonderwoman extends JusticeLeague {
 
     }
 
-    get capes() {
-        return this._capes;
+    get noCapes() {
+        return this._noCapes;
     }
 
 }
