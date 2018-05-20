@@ -1,47 +1,35 @@
-function changeColor() {
+function colorChange() {
 
-  // Grab COLOR Input Value
-  let color = document.getElementById("changeColor").value;
+  // input value for color change
+  let color = document.getElementById("colorChange").value;
 
   // Grab Container for changing COLOR Value
-  let example1 = document.getElementById("example1");
+  let example1 = document.getElementById("action1");
 
   // Change the Background Color
   let colorChoice = example1.style.backgroundColor = color;
 }
 
-function changeOpacity() {
+function visible() {
 
-  // Grab OPACITY Input Value
-  let opacity = document.getElementById("changeOpacity").value;
-
-  // Grab Container for changing OPACITY Value
-  let example1 = document.getElementById("example1");
-
-  // Change the Opacity
-  let opacityChoice = example1.style.opacity = opacity;
+  // this function reveals the spot
+  document.getElementById("action2").style.visibility='visible';
 }
 
-function changeWidth() {
+function invisible() {
+
+  // this function hides the spot
+  document.getElementById("action2").style.visibility='hidden';
+}
+
+function widthChange() {
 
   // Grab WIDTH Input Value
-  let width = document.getElementById("changeWidth").value;
+  let width = document.getElementById("widthChange").value;
 
   // Grab Container for changing WIDTH Value
-  let example1 = document.getElementById("example1");
+  let example1 = document.getElementById("action3");
 
   // Change the Width
   let widthChoice = example1.style.width = width;
-}
-
-function changeBR() {
-
-  // Grab BR Input Value
-  let br = document.getElementById("changeBR").value;
-
-  // Grab Container for changing BR Value
-  let example1 = document.getElementById("example1");
-
-  // Change the Border Radius
-  let brChoice = example1.style.borderRadius = br;
 }

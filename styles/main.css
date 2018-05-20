@@ -5,6 +5,15 @@
     background-color: #F0DCB9;
 }
 
+h2 {
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+    text-align: center;
+    margin:auto;
+    color: #FF5100;
+}
+
+
 h3 {
     font-family: 'Amatic SC', cursive;
     font-size: 40px;
@@ -50,6 +59,39 @@ h1 {
 
 .sphere:hover {
     transform: scale(4);
+}
+/*--------- Spot manipulation with JavaScript -------*/
+
+.spot {
+    border-radius: 50%;
+    height: 250px;
+    margin: 250px auto;
+    width: 250px;
+    background: #940D0B;
+    margin: auto;
+}
+
+.spot2 {
+    border-radius: 50%;
+    height: 250px;
+    margin: 250px auto;
+    width: 250px;
+    background: #FF5100;
+    margin: auto;
+}
+
+.spot3 {
+    border-radius: 50%;
+    height: 250px;
+    margin: 250px auto;
+    width: 250px;
+    background: #105761;
+    margin: auto;
+}
+
+.spotManipulation {
+    
+    
 }
 
 /*--------- Animation color-change ---------*/

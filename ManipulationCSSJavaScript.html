@@ -18,27 +18,44 @@
                 </nav>
         </header>
 
-        <div>
-            <div class="transition1">
+        <section>
+            <div>
                 <h1>CSS Manipulation with JavaScipt</h1>
-                <div class="sphere sphere1"></div>
-                <h1>Ease</h1>
-                <div class="bar bar2"></div>
-                <h1>Ease-In</h1>
-                <div class="bar bar3"></div>
-                <h1>Ease-Out</h1>
-                <div class="bar bar4"></div>
-                <h1>Ease-In-Out</h1>
-                <div class="bar bar5"></div>
+                
+                <h2>Visibility Section</h2>
+                <div id="action2" class="spot"></div>                
+                <button type="button" onclick="visible()">Click to show!</button><br/>
+                <button type="button" onclick="invisible()">Click to Hide!</button>
             </div>
-        </div>
-
+        </section>
+            
+        <section>
+            <div>
+                <h2>Color Change</h2>
+                <div id="action1" class="spot2"></div>                
+                <label>Color Input:</label>
+                <input type="text" id="colorChange" placeholder="#0000, blue">
+            </div>
+            
+            <button type="submit" onclick="colorChange()" id="button" class="buttons">Submit</button>
+        </section>
+            
+        <section>
+            <div>
+                <h2>Width Change</h2>
+                <div id="action3" class="spot3"></div>                
+                <label>Width Input:</label>
+                <input type="text" id="widthChange" placeholder="50%, 50px">
+            </div>
+            
+            <button type="submit" onclick="widthChange()" id="button" class="buttons">Submit</button>
+        </section>
         </main>
 
         <footer>
             <p>© 2017 - Hiram Todd - Location: Aizona - US - <a href="http://www.byui.edu/online">BYU-Idaho</a></p>
         </footer>
-
+        <script src="script/ManipulationCSSJavaScript.js"></script>
         </body>
 
 </html>
