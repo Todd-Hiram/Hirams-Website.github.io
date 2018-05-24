@@ -1,8 +1,54 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
-* {
-    margin: 50px;
+/*--- apply a natural box layout model to all elements ---*/
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
     box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: 'Amatic SC', sans-serif;
     background-color: #F0DCB9;
+    margin-right: 40px;
+    margin-left: 50px;
+}
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #105761;
+}
+header h1 {
+    margin: 0;
+    font-family: 'Amatic SC', sans-serif;
+    text-align: center;
+}
+header h2 {
+    margin: 0; 
+    font-weight: normal;
+    text-align: center;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #940D0B;
+    padding: 12px;
+    text-align: center;
+    color: white;
+}
+
+/*----------- MAIN --------------*/
+.indexList {
+    padding: 25px;
+    margin: 10px;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
 }
 
 html {
@@ -10,16 +56,15 @@ html {
 }
 
 h2 {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', sans-serif;
     font-size: 35px;
     text-align: center;
     margin:auto;
     color: #FF5100;
 }
 
-
 h3 {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Amatic SC', sans-serif;
     font-size: 40px;
     text-align: center;
     margin:auto;
@@ -64,8 +109,8 @@ h1 {
 .sphere:hover {
     transform: scale(4);
 }
-/*--------- Spot manipulation with JavaScript -------*/
 
+/*Spot manipulation with JavaScript*/
 .spot {
     border-radius: 50%;
     height: 250px;
@@ -93,12 +138,8 @@ h1 {
     margin: auto;
 }
 
-.spotManipulation {
-    
-    
-}
 
-/*--------- Animation color-change ---------*/
+/*Animation color-change*/
 @-webkit-keyframes square-to-circle {
     0% {
         border-radius: 0 0 0 0;
@@ -146,12 +187,7 @@ h1 {
     transform: translateY(-50%);
 }
 
-/*--------- TRANSITION DEMONSTRATION -------*/
-nav {
-    text-align: center;
-    margin:auto;
-}
-
+/*TRANSITION DEMONSTRATION*/
 .bar {
     margin: 10px 0px;
     -webkit-transition: width 2s;
@@ -211,22 +247,6 @@ nav {
     width: 300px;
 }
 
-/*--------- Transition & Transform ---------*/
-.transform {
-    width: 5em;
-    height: 5em;
-    background-color: #FF5100;
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-    transform: width 2s, height 2s, -webkit-transform 2s;
-}
-
-.box:hover {
-    width: 300px;
-    height: 300px;
-    -webkit-transition: rotate(180deg);
-    transform: rotate(180deg);
-}
-
 /*--------- Transition delay ---------*/
 .delay {
     width: 5em;
@@ -253,9 +273,9 @@ nav {
 }
 
 .dots {
-
-    width: 800px;
-    padding-top: 100px;
+    
+    width: 100%;
+    padding: 100px;
     margin: 0 auto;
 }
 
@@ -323,24 +343,16 @@ audio {
     margin: 1em auto;
     position: relative;
     max-width: 100%;
+    padding: 50px;
 }
 
 /*---------- HTML5 Tags - Canvas ----------*/
 canvas {
     display: block;
-    margin: ;0
+    margin: 50px;
     padding: 0;
     background: black;
-    width: 85%;
-}
-
-/*---------------- Footer -----------------*/
-section p {
-    font-family: 'Amatic SC', cursive;
-    font-size: 30px;
-    text-align: center;
-    margin:auto;
-    color: #FF5100;
+    width: 90%;
 }
 
 /*---------------- DOM Manipulation -----------------*/
@@ -409,3 +421,20 @@ section p {
         transform: translate(25px);
     }
 }
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #105761;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin: 25px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+
+    
