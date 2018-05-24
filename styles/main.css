@@ -335,8 +335,18 @@ canvas {
 }
 
 /*---------------- Footer -----------------*/
-p {
+section p {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
     text-align: center;
+    margin:auto;
+    color: #FF5100;
+}
+
+/*---------------- DOM Manipulation -----------------*/
+.block1 {
+    border: 2px;
+    border-color: black;
 }
 
 /*---------------------- Keyframes ---------------------*/
