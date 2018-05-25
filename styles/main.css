@@ -18,24 +18,40 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-    padding: .5rem 2%;
+    background-color: #105761;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin: 25px;
     background-color: #105761;
 }
+
 header h1 {
     margin: 0;
     font-family: 'Amatic SC', sans-serif;
     text-align: center;
 }
+
 header h2 {
     margin: 0; 
     font-weight: normal;
     text-align: center;
 }
 
+header img {
+    border: 5px solid #F0DCB9;
+    border-radius: 15px;
+    padding: 5px;
+    height: 25%;
+    width: 25%;
+}
+
 /*----------- NAVIGATION --------------*/
 nav {
+    text-align: center;
+    padding: 2px;
+    margin: 25px;
     background-color: #940D0B;
-    padding: 12px;
     text-align: center;
     color: white;
 }
@@ -359,6 +375,84 @@ canvas {
 .block1 {
     border: 2px;
     border-color: black;
+}
+
+/*---------------- DOM Manipulation -----------------*/
+#content {
+  width: 400px;
+  background: #fff;
+  padding: 0px;
+  padding-top: 0;
+  font-family: calibri;
+  font-size: 18px;
+  color: #444;
+  margin: 0 auto;
+  /*max-height:270px;*/
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+}
+
+#content.open {
+  max-height: 1000px;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+}
+
+#show-photo {
+  background: #1594e5;
+  color: #fff;
+  font-family: calibri;
+  display: block;
+  margin: 20px auto;
+  width: 140px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+/*----------------- L05 Color Change -------------------*/
+.seaGreen {
+  background-color: #105761;
+}
+
+.maroon {
+  background-color: maroon;
+}
+
+/*Container and Button Styles*/
+
+#ball {
+    display: block;
+    align-items: center;
+}
+
+#container {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+button {
+  height: 30px;
+  border-radius: 10px;
+  background-color: white;
+  border-color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: lightgray;
+  border-color: gray;
 }
 
 /*---------------------- Keyframes ---------------------*/
