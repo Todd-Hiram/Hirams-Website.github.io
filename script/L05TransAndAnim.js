@@ -1,4 +1,4 @@
-function setUpEvents() {
+function openClose() {
   var content = document.getElementById("content");
   var button = document.getElementById("show-photo");
 
@@ -16,16 +16,16 @@ function setUpEvents() {
 }
 
 window.onload = function() {
-  setUpEvents();
+  openClose();
 };
 
 
 const container = document.getElementById('container');
 container.className = "maroon";
-const btn = document.createElement('button');
+const push = document.createElement('button');
 
-btn.innerText = 'Click to Change Color';
-btn.onclick = function(event) {
+push.innerText = 'Click to Change Color';
+push.onclick = function(event) {
   if (container.classList.contains('maroon')) {
       container.classList.remove('maroon');
       container.classList.add('seaGreen');
@@ -36,4 +36,4 @@ btn.onclick = function(event) {
   }
 };
 
-container.appendChild(btn);
+container.appendChild(push);
