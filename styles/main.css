@@ -455,6 +455,14 @@ button:hover {
   border-color: gray;
 }
 
+/*----------------- L05 JSON Parse and Stringify -------------------*/
+.json {
+    display: block;
+    font-size: 5em;
+    margin: 50px;
+    text-align: center;
+}
+
 /*---------------------- Keyframes ---------------------*/
 @-webkit-keyframes left {
     0% {

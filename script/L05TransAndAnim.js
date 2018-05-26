@@ -37,4 +37,3 @@ btn.onclick = function(event) {
 };
 
 container.appendChild(btn);
-
