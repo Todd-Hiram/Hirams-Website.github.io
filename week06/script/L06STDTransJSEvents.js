@@ -13,6 +13,12 @@ function drop(event) {
     event.target.appendChild(document.getElementById(data));
 }
 
+function touchAndMove(touch) {
+  var x = touch.touches[0].clientX;
+  var y = touch.touches[0].clientY;
+  touch.target.appendChild(document.getElementById(data));
+}
+
 function myFunction(event) {
   var x = event.touches[0].clientX;
   var y = event.touches[0].clientY;

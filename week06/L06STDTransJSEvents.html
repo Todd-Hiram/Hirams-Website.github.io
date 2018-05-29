@@ -51,9 +51,9 @@
     <main>
         <header>
             <h3>Standard JavaScript Events Including those for Mobile Devices ( Ex. onTouchBegin, onLoad, etc.) and Animation and Transition Events</h3>
-                <nav>
-                    <a href="../index.html">Home</a>
-                </nav>
+            <nav>
+                <a href="../index.html">Home</a>
+            </nav>
         </header>
         
         <section id="container">
@@ -61,21 +61,11 @@
         <h2>Drag the Sphere back and forth between oultines.</h2>
         
             <div id="sphere1" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div id="sphere" draggable="true" ondragstart="drag(event)" ontouchmove="touchAndMove">Drag Me!</div>
+                <div id="sphere" draggable="true" ondragstart="drag(event)" ontouchmove="touchAndMove(touch)">Drag Me!</div>
             </div>
 
             <div id="sphere2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </section>
-        
-<!--        <section id="container2">
-        <h1>DOM touchmove Event</h1>
-
-        <p ontouchmove="myFunction(event)">Touch this paragraph, and move the finger to trigger a function that will display the x and y coordinates of the touch, according the the document:</p>
-
-        <p><strong>Note:</strong> This example is for touch devices only.</p>
-
-        <p id="demo"></p>
-        </section>-->
         
         <section id="container2">
         <h3>DOM touchmove Event</h3>
