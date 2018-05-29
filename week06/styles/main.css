@@ -45,7 +45,7 @@ body {
     border: 1px solid black;
 }
 
-.dragger {
+dragHere {
     font-size: 2em;
     text-align: center;
     color: darkolivegreen;

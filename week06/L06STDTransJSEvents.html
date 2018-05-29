@@ -67,13 +67,11 @@
             <div id="sphere2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </section>
         
-        <h3>Touch and Drag</h3>
-        <h2>Drag the image back and forth between the two div elements.</h2>
-        
-        <section id="container" ontouchmove="myFunction(touch)">
+        <h3>DOM touchmove Event</h3>
+        <section>
+            <h2 ontouchmove="myFunction(event)">Touch this paragraph, and move the finger to trigger a function that will display the x and y coordinates of the touch, according the the document:</h2>
 
-                <div id="demo" class="dragger"><p>Drag your finger sentence to display the coordinates of X and Y!</p></div>
-
+            <p id="demo"></p>
         </section>
         
     </main>

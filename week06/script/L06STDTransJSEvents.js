@@ -14,14 +14,14 @@ function drop(event) {
 }
 
 
-function touchAndMove(event) {
+/*function touchAndMove(event) {
     let x = event.touches[0].clientX;
     let y = event.touches[0].clientY;
     event.target.appendChild(document.getElementById(data));
-}
+}*/
 
-function myFunction(touch) {
-  var x = touch.touches[0].clientX;
-  var y = touch.touches[0].clientY;
+function myFunction(event) {
+  var x = event.touches[0].clientX;
+  var y = event.touches[0].clientY;
   document.getElementById("demo").innerHTML = x + ", " + y;
 }
