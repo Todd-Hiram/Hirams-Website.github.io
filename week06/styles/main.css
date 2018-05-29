@@ -45,6 +45,12 @@ body {
     border: 1px solid black;
 }
 
+.dragger {
+    font-size: 2em;
+    text-align: center;
+    color: darkolivegreen;
+}
+
 /*----------- HEADER --------------*/
 header {
     background-color: #105761;
