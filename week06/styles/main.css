@@ -2,13 +2,15 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*--- apply a natural box layout model to all elements ---*/
-* { -moz-box-sizing: border-box; 
+* { display: block;
+    -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box;
 }
 
 /*----------- BODY --------------*/
 body {
+    height: 100%;
     font-size: 16px;
     font-family: 'Amatic SC', sans-serif;
     background-color: #F0DCB9;
@@ -49,6 +51,11 @@ dragHere {
     font-size: 2em;
     text-align: center;
     color: darkolivegreen;
+}
+
+section {
+    display: block;
+    margin: 25px;
 }
 
 /*----------- HEADER --------------*/
@@ -145,10 +152,7 @@ h1 {
 footer {
     background-color: #105761;
     text-align: center;
-    color: white;
-    padding: 5px;
-    margin: 0;
-    
+    color: white;    
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
