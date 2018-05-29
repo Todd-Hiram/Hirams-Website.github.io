@@ -60,7 +60,6 @@
         <h3>Drag and Drop</h3>
         <h2>Drag the Sphere back and forth between oultines.</h2>
         
-
             <div id="sphere1" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <div id="sphere" draggable="true" ondragstart="drag(event)" ontouchmove="touchAndMove">Drag Me!</div>
             </div>
@@ -68,13 +67,21 @@
             <div id="sphere2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </section>
         
-        <section id="container">
+        <h1>DOM touchmove Event</h1>
+
+        <p ontouchmove="myFunction(event)">Touch this paragraph, and move the finger to trigger a function that will display the x and y coordinates of the touch, according the the document:</p>
+
+        <p><strong>Note:</strong> This example is for touch devices only.</p>
+
+        <p id="demo"></p>
+        
+<!--        <section id="container">
         <h3>DOM touchmove Event</h3>
         
             <h2 ontouchmove="myFunction(event)">Drag finger across this paragraph display the coordinates of X and Y: </h2>
 
             <p id="demo"></p>
-        </section>
+        </section>-->
         
     </main>
 
