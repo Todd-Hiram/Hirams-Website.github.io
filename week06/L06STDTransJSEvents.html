@@ -56,8 +56,8 @@
                 </nav>
         </header>
         
-        <h2>Drag and Drop</h2>
-        <p>Drag the image back and forth between the two div elements.</p>
+        <h3>Drag and Drop</h3>
+        <h2>Drag the Sphere back and forth between oultines.</h2>
         
         <section id="container">
             <div id="sphere1" ondrop="drop(event)" ondragover="allowDrop(event)">
@@ -67,15 +67,13 @@
             <div id="sphere2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </section>
         
-                <h2>Drag and Drop</h2>
-        <p>Drag the image back and forth between the two div elements.</p>
+        <h3>Drag Across</h3>
+        <h2>Drag the image back and forth between the two div elements.</h2>
         
         <section id="container">
-            <div id="sphere1 demo" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div id="sphere" draggable="true" ondragstart="drag(event)">Drag Me!</div>
+            <div id="demo">
+                <div ontouchmove="myFunction(touch)">Drag your finger sentence to display the coordinates of X and Y!</div>
             </div>
-
-            <div id="sphere2 touch" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </section>
         
     </main>

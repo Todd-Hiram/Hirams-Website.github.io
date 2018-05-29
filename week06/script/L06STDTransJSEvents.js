@@ -19,3 +19,9 @@ function touchAndMove(event) {
     let y = event.touches[0].clientY;
     event.target.appendChild(document.getElementById(data));
 }
+
+function myFunction(touch) {
+  var x = touch.touches[0].clientX;
+  var y = touch.touches[0].clientY;
+  document.getElementById("demo").innerHTML = x + ", " + y;
+}
