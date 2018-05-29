@@ -16,6 +16,35 @@ body {
     margin-left: 50px;
 }
 
+/*---------------Week 06---------------*/
+#container {
+    display: inline-block;
+}
+
+#sphere {
+    position: relative;
+    bottom: 10px;
+    right: 12px;
+    text-align: center;
+    font-size: 25px;
+    color: #FF5100;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: #940D0B;
+}
+
+#sphere1, #sphere2 {
+    border-radius: 50%;
+    height: 150px;
+    margin: 150px auto;
+    width: 150px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
 /*----------- HEADER --------------*/
 header {
     background-color: #105761;
@@ -60,6 +89,7 @@ nav {
 main {
     padding: 0 2%;
     min-height: 10rem;
+    
 }
 
 html {
@@ -101,109 +131,9 @@ h1 {
     text-transform: uppercase;
 }
 
-/*---------------Animation color-change---------------*/
-#sphere {
-    border-radius: 50%;
-    height: 150px;
-    margin: 150px auto;
-    width: 150px;
-    background-color: #940D0B;
-}
-
-
-/*Animation color-change*/
-@-webkit-keyframes square-to-circle {
-    0% {
-        border-radius: 0 0 0 0;
-        background-color: #940D0B;
-        transform: rotate(0deg);
-    }
-
-    25% {
-        border-radius: 50% 0 0 0;
-        background-color: #105761;
-        transform: rotate(45deg);
-    }
-
-    50% {
-        border-radius: 50% 50% 0 0;
-        background-color: #FF5100;
-        transform: rotate(90deg);
-    }
-
-    75% {
-        border-radius: 50% 50% 50% 0;
-        background-color: #940D0B;
-        transform: rotate(135deg);
-    }
-
-    100% {
-        border-radius: 50%;
-        background-color: #105761;
-        transform: rotate(180deg);
-    }
-}
+/*------------------Animation color-change*------------*/
 
 /*---------------------- Keyframes ---------------------*/
-@-webkit-keyframes left {
-    0% {
-        -webkit-transform: translate(25px);
-    }
-    50% {
-        -webkit-transform: translate(-25px);
-    }
-    100% {
-        -webkit-transform: translate(25px);
-    }
-}
-
-@-moz-keyframes right {
-    0% {
-        -moz-transform: translate(-25px);
-    }
-    50% {
-        -moz-transform: translate(25px);
-    }
-    100% {
-        -moz-transform: translate(-25px);
-    }
-}
-
-@-moz-keyframes left {
-    0% {
-        -moz-transform: translate(25px);
-    }
-    50% {
-        -moz-transform: translate(-25px);
-    }
-    100% {
-        -moz-transform: translate(25px);
-    }
-}
-
-@keyframes right {
-    0% {
-        transform: translate(-25px);
-    }
-    50% {
-        transform: translate(25px);
-    }
-    100% {
-        transform: translate(-25px);
-    }
-}
-
-@keyframes left {
-    0% {
-        transform: translate(25px);
-    }
-    50% {
-        transform: translate(-25px);
-    }
-    100% {
-        transform: translate(25px);
-    }
-}
 
 /*----------- FOOTER --------------*/
 footer {
@@ -212,6 +142,7 @@ footer {
     color: white;
     padding: 5px;
     margin: 0;
+    
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
