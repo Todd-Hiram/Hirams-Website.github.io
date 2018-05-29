@@ -65,6 +65,10 @@ section {
     margin: 25px;
 }
 
+#demo {
+    font-size: 16px;
+}
+
 /*----------- HEADER --------------*/
 header {
     background-color: #105761;
