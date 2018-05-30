@@ -15,17 +15,19 @@ function drop(event) {
 
 
 /*------------ Drag Finger for Coordinates ------------*/
+/*
 function myFunction(event) {
   let x = event.touches[0].clientX;
   let y = event.touches[0].clientY;
   document.getElementById("demo1").innerHTML = x + ", " + y;
 }
+*/
 
 
 /*------------ Drag Mouse for Coordinates ------------*/
-function mouseMove(mouseEvent) {
-    let x = mouseEvent.clientX;
-    let y = mouseEvent.clientY;
+function mouseMove(mouse) {
+    let x = mouse.clientX;
+    let y = mouse.clientY;
     let coordinates = "Coordinate are: (" + x + ", " + y + ")";
     document.getElementById("demo2").innerHTML = coordinates;
 }
