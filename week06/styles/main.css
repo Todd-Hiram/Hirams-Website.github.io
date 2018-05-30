@@ -34,6 +34,19 @@ body {
     padding: 50px;
 }
 
+#container3 {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+#coordBox {
+    border: 1px solid #105761;
+    width: 400px;
+    height: 300px;
+}
+
 #sphere {
     position: relative;
     bottom: 10px;
@@ -71,25 +84,6 @@ section {
 
 #demo {
     font-size: 16px;
-}
-
-/*------------ latest ------------*/
-#container3 {
-    display: inline-block;
-    width: 100%;
-    margin: auto;
-    padding: 50px;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    from {top: 0px;}
-    to {top: 200px;}
-}
-
-@keyframes mymove {
-    from {top: 0px;}
-    to {top: 200px;}
 }
 
 /*----------- HEADER --------------*/
