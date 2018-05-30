@@ -26,7 +26,7 @@ function myFunction(event) {
 }
 
 /*--------------------------------- latest -----------------------------*/
-function myFunction() {
+/*function myFunction() {
     x.style.WebkitAnimation = "mymove 4s 2"; // Code for Chrome, Safari and Opera
     x.style.animation = "mymove 4s 2";       // Standard syntax
 }
@@ -54,4 +54,4 @@ function myRepeatFunction() {
 function myEndFunction() {
     this.innerHTML = "animationend event occured - The animation has completed";
     this.style.backgroundColor = "lightgray";
-}
+}*/
