@@ -9,11 +9,13 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- BODY --------------*/
 body {
+    display: inline-block;
     font-size: 16px;
     font-family: 'Amatic SC', sans-serif;
     background-color: #F0DCB9;
-    margin-right: 40px;
-    margin-left: 50px;
+    width: 100%;
+    margin: auto;
+    padding: 25px;
 }
 
 /*----------- HEADER --------------*/
@@ -87,7 +89,10 @@ h3 {
 }
 
 .transition {
-    margin: 15px;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
 }
 
 .transition {
@@ -126,7 +131,14 @@ h1 {
     transform: scale(4);
 }
 
-/*Spot manipulation with JavaScript*/
+/*-----Spot manipulation with JavaScript-----*/
+#dots {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
 .spot {
     border-radius: 50%;
     height: 250px;
@@ -154,8 +166,14 @@ h1 {
     margin: auto;
 }
 
+/*------- Animation color-change -------*/
+#animation {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
 
-/*Animation color-change*/
 @-webkit-keyframes square-to-circle {
     0% {
         border-radius: 0 0 0 0;
@@ -203,7 +221,28 @@ h1 {
     transform: translateY(-50%);
 }
 
-/*TRANSITION DEMONSTRATION*/
+#transition4 {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+/*------ TRANSITION DEMONSTRATION ------*/
+#transition3 {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+#transition5 {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
 .bar {
     margin: 10px 0px;
     -webkit-transition: width 2s;
@@ -250,6 +289,12 @@ h1 {
 }
 
 /*--------- Cubic-bezier ---------*/
+#transition4 {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
 
 .bezier {
     width: 5em;
@@ -331,10 +376,6 @@ h1 {
 }
 
 /*--------- HTML5 Tags - Videos ---------*/
-.videoContainer {
-
-}
-
 .video1 {
     margin: 1em auto;
     display: block;
@@ -363,18 +404,34 @@ audio {
 }
 
 /*---------- HTML5 Tags - Canvas ----------*/
+#myMatrix {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
 canvas {
-    display: block;
-    margin: 50px;
-    padding: 0;
-    background: black;
-    width: 90%;
+    width: 100%;
 }
 
 /*---------------- DOM Manipulation -----------------*/
 .block1 {
     border: 2px;
     border-color: black;
+    margin: 20px;
+}
+
+.block2 {
+    border: 2px;
+    border-color: black;
+    margin: 20px;
+}
+
+.block3 {
+    border: 2px;
+    border-color: black;
+    margin: 20px;
 }
 
 /*---------------- DOM Manipulation -----------------*/
@@ -417,6 +474,13 @@ canvas {
 }
 
 /*----------------- L05 Color Change -------------------*/
+.familyList {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 25px;
+}
+
 .seaGreen {
   background-color: #105761;
 }
