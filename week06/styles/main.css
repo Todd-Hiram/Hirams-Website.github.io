@@ -41,6 +41,14 @@ body {
     padding: 50px;
 }
 
+#demo1 {
+    font-size: 30px;
+}
+
+#demo2 {
+    font-size: 30px;
+}
+
 #coordBox {
     border: 1px solid #105761;
     width: 400px;
@@ -49,8 +57,8 @@ body {
 
 #sphere {
     position: relative;
-    bottom: 10px;
-    right: 12px;
+    bottom: 11px;
+    right: 11px;
     text-align: center;
     font-size: 25px;
     color: #FF5100;
