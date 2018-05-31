@@ -85,6 +85,12 @@ dragHere {
     color: darkolivegreen;
 }
 
+#exampleAlert {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+}
+
 section {
     display: block;
     margin: 25px;
