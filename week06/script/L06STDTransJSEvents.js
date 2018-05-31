@@ -18,7 +18,7 @@ function drop(event) {
 function myFunction(event) {
   let x = event.touches[0].clientX;
   let y = event.touches[0].clientY;
-  document.getElementById("demo1").innerHTML = x + ", " + y;
+  document.getElementById("demo1").innerHTML = "Coordinate are: (" + x + ", " + y + ")";
 }
 
 
