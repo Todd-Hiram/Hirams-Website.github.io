@@ -100,6 +100,16 @@ section {
     font-size: 16px;
 }
 
+#disney {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    color: #105761;
+    font-size: 25px;
+}
+
 /*----------- HEADER --------------*/
 header {
     background-color: #105761;
