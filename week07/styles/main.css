@@ -1,0 +1,242 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*--- apply a natural box layout model to all elements ---*/
+* { display: block;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/*----------- BODY --------------*/
+body {
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Amatic SC', sans-serif;
+    background-color: #F0DCB9;
+    margin-right: 40px;
+    margin-left: 50px;
+}
+
+#p1, #p2 {
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+/*---------------Week 06---------------*/
+#container {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+#container2 {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+#container3 {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+#demo1 {
+    font-size: 30px;
+}
+
+#demo2 {
+    font-size: 30px;
+}
+
+#coordBox {
+    border: 1px solid #105761;
+    width: 400px;
+    height: 300px;
+}
+
+#sphere {
+    position: relative;
+    bottom: 11px;
+    right: 11px;
+    text-align: center;
+    font-size: 25px;
+    color: #FF5100;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-color: #940D0B;
+}
+
+#sphere1, #sphere2 {
+    border-radius: 50%;
+    height: 150px;
+    margin: 150px auto;
+    width: 150px;
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+dragHere {
+    font-size: 2em;
+    text-align: center;
+    color: darkolivegreen;
+}
+
+#exampleAlert {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+}
+
+section {
+    display: block;
+    margin: 25px;
+}
+
+#demo {
+    font-size: 16px;
+}
+
+#disney {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    color: #105761;
+    font-size: 25px;
+}
+
+#example1 {
+    display: inline-block;
+    overflow: auto;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #940D0B;
+}
+
+#example2 {
+    display: inline-block;
+    overflow: auto;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #940D0B;
+}
+
+/*----------- HEADER --------------*/
+header {
+    background-color: #105761;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin: 0;
+    background-color: #105761;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Amatic SC', sans-serif;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0; 
+    font-weight: normal;
+    text-align: center;
+}
+
+header img {
+    border: 5px solid #F0DCB9;
+    border-radius: 15px;
+    padding: 5px;
+    height: 25%;
+    width: 25%;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    text-align: center;
+    padding: 2px;
+    margin: 25px;
+    background-color: #940D0B;
+    text-align: center;
+    color: white;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    
+}
+
+html {
+    display: inline;
+}
+
+h2 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin:auto;
+    color: #FF5100;
+}
+
+h3 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin:auto;
+}
+
+.transition {
+    margin: 15px;
+}
+
+.transition {
+    display: inline;
+    width: 300px;
+}
+
+h1 {
+    color: #FF5100;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 25px;
+    font-size: 40px;
+    font-weight: 200;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*---------------------- Keyframes ---------------------*/
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #105761;
+    text-align: center;
+    color: white;    
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+
+    
