@@ -167,8 +167,8 @@ header {
     background-color: #105761;
     text-align: center;
     color: white;
-    padding: 5px;
-    margin: 0;
+    padding: 2px;
+    margin: 2px;
     background-color: #105761;
 }
 
@@ -190,6 +190,47 @@ header img {
     padding: 5px;
     height: 25%;
     width: 25%;
+}
+
+/*------------- Local Storage --------------*/
+.grid {
+  display: grid;
+  border-spacing: 2px;
+
+}
+.row {
+  display: table-row;
+}
+.cell {
+  display: block;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #105761;
+  display: table-cell;
+}
+
+.colorPicker {
+  border-spacing: 5px;
+}
+
+.color {
+  border-radius: 50%;
+  width: 50px;
+  height: 20px;
+  padding: 5px;
+  background: #FF5100;
+  display: table-cell;
+  text-align: center;
+  color: white;
+  border: 2px solid transparent;
+}
+
+#colorPicks {
+    display: inline-block;
+    padding: 2px;
+    margin: 2px;
+    width: 100%;
 }
 
 /*----------- NAVIGATION --------------*/
@@ -247,8 +288,6 @@ h1 {
     text-align: center;
     text-transform: uppercase;
 }
-
-/*---------------------- Keyframes ---------------------*/
 
 /*----------- FOOTER --------------*/
 footer {
