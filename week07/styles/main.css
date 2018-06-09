@@ -211,7 +211,10 @@ header img {
 }
 
 .colorPicker {
-  border-spacing: 5px;
+    display: inline-block;
+    width: auto;
+    margin: 50px 0px;
+    padding: 50px;
 }
 
 .color {
@@ -231,6 +234,17 @@ header img {
     padding: 2px;
     margin: 2px;
     width: 100%;
+}
+
+#quoter {
+    display: block;
+    margin: 50px;
+    padding: 80px;
+}
+
+#colorDots {
+    display: inline-block;
+
 }
 
 /*----------- NAVIGATION --------------*/

@@ -31,19 +31,21 @@
 	
     <section id="colorPicks">
         <h1>Pick colors and click the cells.</h1>
-        <span class=colorPicker>
-        <span class="color" id="black" onclick="changeBrush(id)">Black</span>
-        <span class="color" id="orange" onclick="changeBrush(id)">Orange</span>
-        <span class="color" id="blue" onclick="changeBrush(id)">Blue</span>
-        <span class="color" id="green" onclick="changeBrush(id)">Green</span>
-        <span class="color" id="red" onclick="changeBrush(id)">Red</span>
-            <br id="red">
-        <span class="color" id="cyan" onclick="changeBrush(id)">Cyan</span>
-        <span class="color" id="pink" onclick="changeBrush(id)">Pink</span>
-        <span class="color" id="yellow" onclick="changeBrush(id)">Yellow</span>
-        <span class="color" id="brown" onclick="changeBrush(id)">Brown</span>
-        <span class="color" id="white" onclick="changeBrush(id)">White</span>
+        <div id="colorDots">
+            <span class=colorPicker>
+            <span class="color" id="black" onclick="changeBrush(id)">Black</span>
+            <span class="color" id="orange" onclick="changeBrush(id)">Orange</span>
+            <span class="color" id="blue" onclick="changeBrush(id)">Blue</span>
+            <span class="color" id="green" onclick="changeBrush(id)">Green</span>
+            <span class="color" id="red" onclick="changeBrush(id)">Red</span>
+                <br id="red">
+            <span class="color" id="cyan" onclick="changeBrush(id)">Cyan</span>
+            <span class="color" id="pink" onclick="changeBrush(id)">Pink</span>
+            <span class="color" id="yellow" onclick="changeBrush(id)">Yellow</span>
+            <span class="color" id="brown" onclick="changeBrush(id)">Brown</span>
+            <span class="color" id="white" onclick="changeBrush(id)">White</span>
         </span><br><br>
+        </div>
     </section>
     <section id="colorGrid">
         <div class="grid">
@@ -92,12 +94,12 @@
 
     <input type="button" value="Reset the Grid" onclick="resetGrid()"><br><br>
             
-    <section>
+    <section id="quoter">
         <form>
           Store Quotes: <input type="text" id="firstname" placeholder="Quote here!">
             <input type="button" value="Save" onclick="save()">
         </form>
-    </section>
+    
 <br>
 
 <h2>See previous quotes!</h2>
@@ -105,6 +107,7 @@
 <br><br>
 <div id="logolist"></div>
 <br>
+</section>
         </main>
 
         <footer>
