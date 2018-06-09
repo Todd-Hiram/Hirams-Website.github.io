@@ -138,6 +138,30 @@ section {
     color: #940D0B;
 }
 
+#fieldArea {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    background-color: #940D0B;
+    color: white;
+    text-align: center;
+}
+
+#clickThis {
+    display: inline-block;
+    width: 100%;
+    margin: 10px;
+    padding: 50px;
+    background-color: #940D0B;
+    color: white;
+    text-align: center;
+}
+
+#clicker {
+    font-size: 2em;
+}
+
 /*----------- HEADER --------------*/
 header {
     background-color: #105761;
