@@ -7,12 +7,12 @@ function updateBrush() {
 }
 
 //
-function changeBrush(id) {
+function colorChange(id) {
     brushColor = id;
     let children = document.querySelector('.colorPicker').children;
     for (let i = 0; i < children.length; i++){
       document.getElementById(children[i].id).style.border = "2px solid transparent";
-      if (children[i].id=="white"){
+      if (children[i].id=="white") {
         document.getElementById(children[i].id).style.border = "2px solid black"
       }
     }
@@ -23,57 +23,48 @@ function changeBrush(id) {
   }
 
 //
-function paint(id) {
+function sphere(id) {
   document.getElementById(id).style.background = brushColor;
 }
 
 function save() {
   let currentGrid = document.querySelectorAll(".cell");
-  let logoName = document.getElementById("firstname").value;
+  let quoter = document.getElementById("firstname").value;
   let coords = "";
 
-  for (let i = 0; i < currentGrid.length; i++){
+  for (let i = 0; i < currentGrid.length; i++) {
     coords += currentGrid[i].id + "," + document.getElementById(currentGrid[i].id).style.backgroundColor + ",";
   }
 
-  localStorage.setItem(logoName,coords);
+  localStorage.setItem(quoter,coords);
   loadLocalStorage();
   document.getElementById("firstname").value += "_new";
 }
 
-function loadLocalStorage(){
-  document.getElementById("logolist").innerHTML = ""; // clears the tag
-  for (let i = 0; i < localStorage.length; i++){
-    document.getElementById("logolist").innerHTML += "<li id=\""+i+"\">"+localStorage.key(i)+" "
-      +restoreButton(i)
+//This is the function 
+function loadLocalStorage() {
+  document.getElementById("quoteList").innerHTML = ""; // clears the tag
+  for (let i = 0; i < localStorage.length; i++) {
+    document.getElementById("quoteList").innerHTML += "<li id=\""+i+"\">"+localStorage.key(i)+" "
       +deleteButton(i)
       +"</li>";
   }
 }
 
-function restoreButton(i){
-  return "<input type=\"button\" value=\"Restore\" onclick=\"restore("+i+")\">";
+//This function is for the delete button
+function deleteButton(i) {
+  return "<input type=\"button\" value=\"Delete\" onclick=\"deleter("+i+")\">";
 }
 
-function deleteButton(i){
-  return "<input type=\"button\" value=\"Delete\" onclick=\"del("+i+")\">";
-}
-
-function restore(i){
-  let coords = localStorage.getItem(localStorage.key(i)).split(",");
-
-  for (let i = 0; i < coords.length; i+=2){
-    document.getElementById(coords[i]).style.background = coords[i+1];
-  }
-
-}
-
-function del(i){
+//THis function is to delete the qoute when the button is pushed
+//by the user
+function deleter(i) {
   localStorage.removeItem(localStorage.key(i));
   loadLocalStorage();
 }
 
-function resetGrid(){
+//This function resets the grid of spherical colors
+function resetGrid() {
   let currentGrid = document.querySelectorAll(".cell");
   for (let i = 0; i < currentGrid.length; i++){
     document.getElementById(currentGrid[i].id).style.backgroundColor = "";

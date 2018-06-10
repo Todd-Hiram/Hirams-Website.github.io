@@ -33,60 +33,60 @@
         <h1>Pick colors and click the cells.</h1>
         <div id="colorDots">
             <span class=colorPicker>
-            <span class="color" id="black" onclick="changeBrush(id)">Black</span>
-            <span class="color" id="orange" onclick="changeBrush(id)">Orange</span>
-            <span class="color" id="blue" onclick="changeBrush(id)">Blue</span>
-            <span class="color" id="green" onclick="changeBrush(id)">Green</span>
-            <span class="color" id="red" onclick="changeBrush(id)">Red</span>
+            <span class="color" id="black" onclick="colorChange(id)">Black</span>
+            <span class="color" id="orange" onclick="colorChange(id)">Orange</span>
+            <span class="color" id="blue" onclick="colorChange(id)">Blue</span>
+            <span class="color" id="green" onclick="colorChange(id)">Green</span>
+            <span class="color" id="red" onclick="colorChange(id)">Red</span>
                 <br id="red">
-            <span class="color" id="cyan" onclick="changeBrush(id)">Cyan</span>
-            <span class="color" id="pink" onclick="changeBrush(id)">Pink</span>
-            <span class="color" id="yellow" onclick="changeBrush(id)">Yellow</span>
-            <span class="color" id="brown" onclick="changeBrush(id)">Brown</span>
-            <span class="color" id="white" onclick="changeBrush(id)">White</span>
+            <span class="color" id="cyan" onclick="colorChange(id)">Cyan</span>
+            <span class="color" id="pink" onclick="colorChange(id)">Pink</span>
+            <span class="color" id="yellow" onclick="colorChange(id)">Yellow</span>
+            <span class="color" id="brown" onclick="colorChange(id)">Brown</span>
+            <span class="color" id="white" onclick="colorChange(id)">White</span>
         </span><br><br>
         </div>
     </section>
     <section id="colorGrid">
         <div class="grid">
             <div class="row">
-            <div class="cell" id="c15" onclick="paint(id)"></div>
-            <div class="cell" id="c25" onclick="paint(id)"></div>
-            <div class="cell" id="c35" onclick="paint(id)"></div>
-            <div class="cell" id="c45" onclick="paint(id)"></div>
-            <div class="cell" id="c55" onclick="paint(id)"></div>
+            <div class="cell" id="c15" onclick="sphere(id)"></div>
+            <div class="cell" id="c25" onclick="sphere(id)"></div>
+            <div class="cell" id="c35" onclick="sphere(id)"></div>
+            <div class="cell" id="c45" onclick="sphere(id)"></div>
+            <div class="cell" id="c55" onclick="sphere(id)"></div>
                 
           </div>
             <div class="row">
-            <div class="cell" id="c14" onclick="paint(id)"></div>
-            <div class="cell" id="c24" onclick="paint(id)"></div>
-            <div class="cell" id="c34" onclick="paint(id)"></div>
-            <div class="cell" id="c44" onclick="paint(id)"></div>
-            <div class="cell" id="c54" onclick="paint(id)"></div>
+            <div class="cell" id="c14" onclick="sphere(id)"></div>
+            <div class="cell" id="c24" onclick="sphere(id)"></div>
+            <div class="cell" id="c34" onclick="sphere(id)"></div>
+            <div class="cell" id="c44" onclick="sphere(id)"></div>
+            <div class="cell" id="c54" onclick="sphere(id)"></div>
           </div>
             
           <div class="row">
-            <div class="cell" id="c13" onclick="paint(id)"></div>
-            <div class="cell" id="c23" onclick="paint(id)"></div>
-            <div class="cell" id="c33" onclick="paint(id)"></div>
-            <div class="cell" id="c43" onclick="paint(id)"></div>
-            <div class="cell" id="c53" onclick="paint(id)"></div>
+            <div class="cell" id="c13" onclick="sphere(id)"></div>
+            <div class="cell" id="c23" onclick="sphere(id)"></div>
+            <div class="cell" id="c33" onclick="sphere(id)"></div>
+            <div class="cell" id="c43" onclick="sphere(id)"></div>
+            <div class="cell" id="c53" onclick="sphere(id)"></div>
           </div>
             
           <div class="row">
-            <div class="cell" id="c12" onclick="paint(id)"></div>
-            <div class="cell" id="c22" onclick="paint(id)"></div>
-            <div class="cell" id="c32" onclick="paint(id)"></div>
-            <div class="cell" id="c42" onclick="paint(id)"></div>
-            <div class="cell" id="c52" onclick="paint(id)"></div>
+            <div class="cell" id="c12" onclick="sphere(id)"></div>
+            <div class="cell" id="c22" onclick="sphere(id)"></div>
+            <div class="cell" id="c32" onclick="sphere(id)"></div>
+            <div class="cell" id="c42" onclick="sphere(id)"></div>
+            <div class="cell" id="c52" onclick="sphere(id)"></div>
           </div>
             
           <div class="row">
-            <div class="cell" id="c11" onclick="paint(id)"></div>
-            <div class="cell" id="c21" onclick="paint(id)"></div>
-            <div class="cell" id="c31" onclick="paint(id)"></div>
-            <div class="cell" id="c41" onclick="paint(id)"></div>
-            <div class="cell" id="c51" onclick="paint(id)"></div>
+            <div class="cell" id="c11" onclick="sphere(id)"></div>
+            <div class="cell" id="c21" onclick="sphere(id)"></div>
+            <div class="cell" id="c31" onclick="sphere(id)"></div>
+            <div class="cell" id="c41" onclick="sphere(id)"></div>
+            <div class="cell" id="c51" onclick="sphere(id)"></div>
           </div>
         </div>
         </section>
@@ -105,7 +105,7 @@
 <h2>See previous quotes!</h2>
 <input type="button" value="Refresh List" onclick="loadLocalStorage()">
 <br><br>
-<div id="logolist"></div>
+<div id="quoteList"></div>
 <br>
 </section>
         </main>
