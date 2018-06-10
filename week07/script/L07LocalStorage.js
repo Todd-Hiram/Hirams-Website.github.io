@@ -27,9 +27,10 @@ function sphere(id) {
   document.getElementById(id).style.background = brushColor;
 }
 
+
 function save() {
   let currentGrid = document.querySelectorAll(".cell");
-  let quoter = document.getElementById("firstname").value;
+  let quoter = document.getElementById("wordPhrase").value;
   let coords = "";
 
   for (let i = 0; i < currentGrid.length; i++) {
@@ -38,10 +39,10 @@ function save() {
 
   localStorage.setItem(quoter,coords);
   loadLocalStorage();
-  document.getElementById("firstname").value += "_new";
+  document.getElementById("wordPhrase").value += "_new";
 }
 
-//This is the function 
+//This is the function stores the list of quotes inputted by the user
 function loadLocalStorage() {
   document.getElementById("quoteList").innerHTML = ""; // clears the tag
   for (let i = 0; i < localStorage.length; i++) {
