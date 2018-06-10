@@ -6,7 +6,8 @@ function updateBrush() {
     return selectedColor;
 }
 
-//
+//This function allows the user to select the color from the 10
+//oval color buttons and changes the spheres in the main grid
 function colorChange(id) {
     brushColor = id;
     let children = document.querySelector('.colorPicker').children;
@@ -22,12 +23,12 @@ function colorChange(id) {
     }
   }
 
-//
+//This is the output funcition
 function sphere(id) {
   document.getElementById(id).style.background = brushColor;
 }
 
-
+//This function saves the quote to the localStorage
 function save() {
   let currentGrid = document.querySelectorAll(".cell");
   let quoter = document.getElementById("wordPhrase").value;
