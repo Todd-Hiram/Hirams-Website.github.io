@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="Hiram Todd" content="Hiram Todd">
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <!-- STYLE SHEETS -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="style/main.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="style/medium-5.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="style/large-5.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+
+</head>
+
+    <body>
+        <main>
+        <header>
+            <h3>Local Storage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</h3>
+                <nav>
+                    <a href="../index.html">Home</a>
+                </nav>
+        </header>
+            <section>
+                <h3>localStorage</h3>
+                <p>There are two types when of the storage property and that is localStorage and sessionStorage. Both behave fairly similar, but the differences between the two are that sessionStorage is wiped out clean after a session while localStorage can continue on into multiple sessions, it does not have an expiration date nor will the data go away when you close the browser. Years ago, storage was only possible through cookies. A good example of localStorage propterties is the online shopping cart on all online shopping sites like Amazon, Walmart, and thousand of others. You can add items to your cart and continue shopping throught the site and you return to the cart, all the items are still there.</p>
+            </section>
+            
+            <section>
+                <h3>Syntax</h3>
+                <p>To save data 
+                <br>localStorage.setItem("itemName", "value")
+                <br> Example:
+                <br>
+                <br> localStorage.setItem("username", "Walter");
+                <br> 
+                <br>To access stored data
+                <br> alert("itemName = " = localStorage.getItem("itemName"));
+                <br> Example: 
+                <br>
+                <br>alert("username = " + localStorage.getItem("username"));
+                <br> The alert output would be "username = Walter"
+                </p>
+            </section>
+            
+            <section>
+                <h3>Objects</h3>
+                In this example, we create an API object. We set the itemName and the value. Here we create an own object and store it. Type your favorite color and retrieve it by clicking the Display button after clicking the Save Color button. 
+                <br/> Favorite Color:
+                <input type="text" id="favoriteColor">
+                <button type="button" onclick="saveColor()">Save Color</button>
+                <br> Now retrieve your favorite color from local storage with the button below. 
+                <br>
+                <button type="button" onclick="showColor()">Display Color</button>
+                <div id="outputColor"></div>
+            </section>
+            
+            <section>
+                <h3>Arrays</h3>
+                The same is done with Arrays, but since local storage only supports strings we convert the array into a string by using JSON.stringify(), and then reverse the process  using JSON.parse. Here we create an array by allwong the user to choose five favorite colors. 
+                <br>0:<input type="text" id="colorOne">
+                <br>1:<input type="text" id="colorTwo">
+                <br>2:<input type="text" id="colorThree">
+                <br>3:<input type="text" id="colorFour">
+                <br>4:<input type="text" id="colorFive">
+                <br><button type="button" onclick="saveArray()">
+                Save Array</button>
+                <br> Now, type the index number in the field below to see which item you want to see from the new array. Remember Arrays are numbered with the first item as number 0. (choose 0,1,2,3,4)
+                <input type="text" id="arrayNum">
+                <button type="button" onclick="displayArray()">Show Me</button>
+                <br>
+                <div id="arrayOutput"></div>
+            </section>
+            
+            <section>
+                <h3>Associative Arrays</h3>
+                Associative Arrays are arrays with names instead of numbers assigned to each value. Lets build an associative array right now. Lets make a list of your favorites. 
+                <br> Name: <input type="text" id="name">
+                <br> Food: <input type="text" id="food">
+                <br> Music: <input type="text" id="music">
+                <br> Movie: <input type="text" id="movie">
+                <br> Insect: <input type="text" id="insect"><br>
+                <button type="button" onclick="saveAssocArray()">Save Associative Array</button>
+                <br> Now lets display your associative array. Just click the button to see the stored result.<br/>
+                <button type="button" onclick="displayAssocArrayValue()">Display Value</button>
+                <br/> 
+                Name:<div id="nameOutput"></div>
+                Food:<div id="foodOutput"></div>
+                Music:<div id="musicOutput"></div>
+                Movie:<div id="movieOutput"></div>
+                Insect:<div id="insectOutput"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2017 - Hiram Todd - Location: Aizona - US - <a href="http://www.byui.edu/online">BYU-Idaho</a></p>
+        </footer>
+        <script src="script/LocalStorageAPI.js"></script>
+        </body>
+</html>

@@ -1,0 +1,113 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*--- apply a natural box layout model to all elements ---*/
+* { display: block;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    margin: auto;
+}
+
+/*----------- BODY --------------*/
+body {
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Amatic SC', sans-serif;
+    background-color: #F0DCB9;
+}
+
+/*---------------Week 06---------------*/
+section {
+    display: block;
+    margin: 25px;
+    padding: 50px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/*----------- HEADER --------------*/
+header {
+    background-color: #105761;
+    text-align: center;
+    color: white;
+    padding: 2px;
+    margin: 2px;
+    background-color: #105761;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Amatic SC', sans-serif;
+    text-align: center;
+}
+
+header h2 {
+    margin: 0; 
+    font-weight: normal;
+    text-align: center;
+}
+
+header img {
+    border: 5px solid #F0DCB9;
+    border-radius: 15px;
+    padding: 5px;
+    height: 25%;
+    width: 25%;
+}
+
+/*------------- Local Storage --------------*/
+
+
+/*----------- NAVIGATION --------------*/
+nav {
+    text-align: center;
+    padding: 2px;
+    margin: 25px;
+    background-color: #940D0B;
+    text-align: center;
+    color: white;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    
+}
+
+html {
+    display: inline;
+}
+
+h2 {
+    font-family: 'Amatic SC', sans-serif;
+    color: #FF5100;
+    font-size: 35px;
+    text-align: center;
+    margin:auto;
+
+}
+
+h3 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin:auto;
+    color: #FF5100:
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #105761;
+    text-align: center;
+    color: white;    
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+
+    
