@@ -1,5 +1,5 @@
 //Object
-//save object
+//save object (color)
 function saveColor() {
     if (typeof (Storage) !== "undefined") {
         var colorIn = document.getElementById('favoriteColor');
@@ -9,11 +9,13 @@ function saveColor() {
         document.getElementById("outputColor").innerHTML = output;
     }
 }
-//display object
+
+//Display object (color)
 function showColor() {
     let colorOut = localStorage.getItem("favColor");
     document.getElementById("outputColor").innerHTML = "Favorite Color: " + localStorage.getItem("favColor");
 }
+
 
 //Array
 //save array
@@ -33,6 +35,7 @@ function saveArray() {
         document.getElementById("arrayOutput").innerHTML = output;
     }
 }
+
 //display array
 function displayArray() {
     let colors = localStorage.getItem("colorArray");
@@ -43,6 +46,7 @@ function displayArray() {
     let output = colorsArray[number];
     document.getElementById("arrayOutput").innerHTML = output;
 }
+
 
 //Associative Array
 //save Associative Array
@@ -68,6 +72,7 @@ function saveAssocArray() {
         document.getElementById("assocArrayOutput").innerHTML = output;
     }
 }
+
 //display Associative array
 function displayAssocArrayValue() {
     let getArray = localStorage.getItem("assocArray");
