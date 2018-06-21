@@ -20,6 +20,7 @@ body {
 /*---------------Week 06---------------*/
 section {
     display: block;
+    width: auto;
     margin: 25px;
     padding: 50px;
     font-size: 1.5em;
@@ -36,26 +37,6 @@ header {
     background-color: #105761;
 }
 
-header h1 {
-    margin: 0;
-    font-family: 'Amatic SC', sans-serif;
-    text-align: center;
-}
-
-header h2 {
-    margin: 0; 
-    font-weight: normal;
-    text-align: center;
-}
-
-header img {
-    border: 5px solid #F0DCB9;
-    border-radius: 15px;
-    padding: 5px;
-    height: 25%;
-    width: 25%;
-}
-
 /*------------- Local Storage --------------*/
 
 
@@ -70,6 +51,13 @@ nav {
 }
 
 /*----------- MAIN --------------*/
+h3 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin:auto;
+}
+
 main {
     padding: 0 2%;
     min-height: 10rem;
@@ -79,20 +67,50 @@ html {
     display: inline;
 }
 
-h2 {
-    font-family: 'Amatic SC', sans-serif;
-    color: #FF5100;
-    font-size: 35px;
-    text-align: center;
-    margin:auto;
+.hideMe {
+      visibility: hidden;
+      opacity: 0;
+      transform: scale(.75);
 }
 
-h3 {
-    font-family: 'Amatic SC', sans-serif;
-    font-size: 40px;
+#animalInfo {
+    display: block;
+    width: auto;
+    margin: 25px;
+    padding: 50px;
+    font-size: 1.5em;
     text-align: center;
-    margin:auto;
-    color: #FF5100:
+    color: #FF5100;
+}
+
+button {
+  display: inline-block;
+  background-color: #940D0B;
+  color: #FFF;
+  border: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 2px 2px 0 #034154;
+  margin-bottom: 10px;
+  margin-left: 18px;
+  transition: opacity .4s ease-out, transform .4s ease-out, visibility .4s ease-out;
+  position: relative;
+  top: -10px;
+}
+
+button:hover {
+  background-color: #034F66;
+}
+
+button:active {
+  background-color: #034154;
+  box-shadow: none;
+  position: relative;
+  top: -8px;
+  left: 2px;
 }
 
 /*----------- FOOTER --------------*/
@@ -107,5 +125,3 @@ footer {
   content: "";
   display: table;
   clear: both;
-
-    
