@@ -1,13 +1,18 @@
+//Object
 let myCat = {
     "name": "meowsalot",
     "species": "cat",
     "favFood": "tuna",
 }
 
-let myFavColors = ["blue", "green", "purple"];*/
+
+//Arrays
+let myFavColors = ["blue", "green", "purple"];
+
 
 /*Below is the better way to create JSON. We have a single variable that contains all of the data. Objects and arrays nested inside each other.*/
 
+//Array of Objects
 let thePets = [
     {
         "name": "meowsalot",

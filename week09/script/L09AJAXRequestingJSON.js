@@ -1,30 +1,12 @@
-/*let myCat = {
-    "name": "meowsalot",
-    "species": "cat",
-    "favFood": "tuna",
-}
-
-let myFavColors = ["blue", "green", "purple"];*/
-
-/*Below is the better way to create JSON. We have a single variable that contains all of the data. Objects and arrays nested inside each other.*/
-
-/*let thePets = [
-    {
-        "name": "meowsalot",
-        "species": "cat",
-        "favFood": "tuna", 
-    }, 
-    {
-        "name": "Barky",
-        "species": "dog",
-        "favFood": "carrots", 
-    }
-]*/
-
 let pageCounter = 1;
 let animalContainer = document.getElementById("animalInfo");
 let btn = document.getElementById("btn");
 
+/*Now web browsers have a built-in tool
+named XML HTTP request and this tool
+does the heavy lifting. This tool establishes a connection with a
+URL that we specify and then it lets us
+send or receive data.*/
 btn.addEventListener("click", function() {
   let ourRequest = new XMLHttpRequest();
   ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-' + pageCounter + '.json');
@@ -35,10 +17,12 @@ btn.addEventListener("click", function() {
       
   };
 
+//Here we display a error message if there is no connection
   ourRequest.onerror = function() {
     console.log("Connection error");
   };
 
+//This part of the function hides the button after 3 clicks.
   ourRequest.send();
   pageCounter++;
     
@@ -49,6 +33,7 @@ btn.addEventListener("click", function() {
           }
     });
 
+//This function adds HTML to the empty DIV element.
 function renderHTML(data) {
   let htmlString = "";
 
