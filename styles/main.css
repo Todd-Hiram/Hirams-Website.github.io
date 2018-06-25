@@ -519,6 +519,13 @@ button:hover {
   border-color: gray;
 }
 
+.one {
+    display: block;
+    width: 25%;
+    margin: auto;
+    padding: 50px;
+}
+
 /*----------------- L05 JSON Parse and Stringify -------------------*/
 .json {
     display: block;
