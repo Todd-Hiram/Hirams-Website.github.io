@@ -526,6 +526,10 @@ button:hover {
     padding: 50px;
 }
 
+#output {
+    font-size: 2em;
+}
+
 /*----------------- L05 JSON Parse and Stringify -------------------*/
 .json {
     display: block;
