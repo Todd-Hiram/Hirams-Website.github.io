@@ -521,13 +521,19 @@ button:hover {
 
 .one {
     display: block;
-    width: 25%;
+    width: 100%;
     margin: auto;
     padding: 50px;
 }
 
 #output {
     font-size: 2em;
+}
+
+.input {
+    width: 100%;
+    margin: auto;
+    padding: 50px;
 }
 
 /*----------------- L05 JSON Parse and Stringify -------------------*/

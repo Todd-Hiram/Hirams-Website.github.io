@@ -1,14 +1,14 @@
 @media only screen and and (min-width: 600px) {
     /* The Navigation */
 * {margin:0}
-header {
-    background-color: #777;
-}
+    header {
+        background-color: #777;
+    }
 
-nav {
-    margin-left: .75rem;
-    padding: 0.5rem;
-}
+    nav {
+        margin-left: .75rem;
+        padding: 0.5rem;
+    }
 
     .hamburger {
         display: block;
@@ -26,31 +26,31 @@ nav {
         display: none;
     }
 
-    @media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
 
-        .navigation.responsive {
-            position: relative;
-        }
-
-        .navigation.responsive a {
-            background-color: #eee;
-            display: block;
-            width: 100%;
-            margin: 2px 0;
-            border: 1px solid #ddd;
-        }
-
-        .navigation.responsive a {
-            padding: 1rem;
-            text-align: center;
-            display: block;
-            text-decoration:none;
-        }
-
-        .navigation.responsive a:hover {
-            background-color: #ddd;
-        }
+    .navigation.responsive {
+        position: relative;
     }
+
+    .navigation.responsive a {
+        background-color: #eee;
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+        border: 1px solid #ddd;
+    }
+
+    .navigation.responsive a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+        text-decoration:none;
+    }
+
+    .navigation.responsive a:hover {
+        background-color: #ddd;
+    }
+}
 
 @media only screen and (min-width: 37.5em) {
     header,	nav {
@@ -72,8 +72,8 @@ nav {
     }
 
     .navigation a {
-            display: inline-flex;
-            margin-left: .25rem;
+        display: inline-flex;
+        margin-left: .25rem;
     }
 
     .navigation a {
@@ -88,20 +88,37 @@ nav {
         color: #000;
         background-color: #777;
     }
-    }
+}
 
-    img {
-        width: 75%;
-        height: auto;
-    }
+img {
+    width: 75%;
+    height: auto;
+}
 
-        .box-3, .box-4 {
+.box-3, .box-4 {
             display: flex;
-        }
+}
 
+/*-------------------------------------------*/
+.one {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
 
-    .hidesmall {
-        display: block;
-    }
+#output {
+    font-size: 2em;
+}
+
+.input {
+    width: 50%;
+    margin: 50%;
+    padding: 50px;
+}
+    
+.hidesmall {
+    display: block;
+}
 
 } //End of media query

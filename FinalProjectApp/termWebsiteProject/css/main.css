@@ -25,10 +25,10 @@ header {
     display: block;
     padding: .5rem 2%;
     background-color: #657819;
-    background-image: url(../images/s1600_saddle.jpg);
-    background-position: center -25em;
+    background-image: url(../images/Cali6.jpg);
+    background-position: center -15em;
     background-repeat: no-repeat;
-    height: 10em;
+    height: 20em;
 }
 
 header h1 {
@@ -36,18 +36,20 @@ header h1 {
     margin: 0;
     color: #C8460F;
     text-align: center;
-    font-size: 45px;
+    font-size: 65px;
     text-shadow: 8px 5px 5px #181C05;
+    position: relative;
+    bottom: -80px;
 }
 
 header h2 {
     margin: 0;
     color: #C8460F;
-    font-size: 21px;
+    font-size: 30px;
     text-align: center;
     text-shadow: 8px 5px 5px #181C05;
     position: relative;
-    bottom: 15px;
+    bottom: -65px;
 }
 
 /*----------- NAVIGATION --------------*/
@@ -306,6 +308,13 @@ legend {
 
 .message textarea {
     background-color: #BDE0B0;
+}
+
+#zipCode {
+    display: block;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
 }
 
 /*----------- FOOTER --------------*/
