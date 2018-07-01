@@ -1,0 +1,26 @@
+[
+{
+"display": "San Francisco",
+"url": "https://www.moadsf.org/calendar/?gclid=CjwKCAjw9-HZBRAwEiwAGw0Qcfl-rxMLieFu1NETh40oFDMQ9RBMIcfz6PlAq-rl3jBZ9l21l2c32xoC748QAvD_BwE"
+},
+{
+"display": "San Diego",
+"url": "https://vanguardculture.com/?gclid=CjwKCAjw9-HZBRAwEiwAGw0QcdvdqTrk1sNWCtuzmsMKMVT9oSS5a_5DDN_JMPQ3KtOZCFrpjRDZ_BoCkv4QAvD_BwE"
+},
+{
+"display": "Laguna Beach",
+"url": "https://www.visitlagunabeach.com/events/?gclid=CjwKCAjw9-HZBRAwEiwAGw0QcVi834noi5vUdKSM1nfTcCP-jBiQmjPB97U4j6sfaSqmtxMzTVAmZxoCD2kQAvD_BwE"
+},
+{
+"display": "Anaheim",
+"url": "https://visitanaheim.org/explore/things-to-do"
+},
+{
+"display": "Monterey",
+"url": "https://www.oldmonterey.org/events"
+},
+{
+"display": "Napa Valley",
+"url": "https://festivalnapavalley.org/about-us/gallery/"
+}
+]

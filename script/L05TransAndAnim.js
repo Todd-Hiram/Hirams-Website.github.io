@@ -1,6 +1,8 @@
+//This function shrinks and unshrinks with a push of a button
 function openClose() {
-  var content = document.getElementById("content");
-  var button = document.getElementById("show-photo");
+    'use strict';
+  let content = document.getElementById("content");
+  let button = document.getElementById("show-photo");
 
   button.onclick = function() {
     if (content.className == "open") {
@@ -20,6 +22,8 @@ window.onload = function() {
 };
 
 
+//This function creates a button that changes the color
+//of a ball
 const container = document.getElementById('container');
 container.className = "maroon";
 const push = document.createElement('button');

@@ -24,6 +24,7 @@
 
 <script src="js/hamburger.js"></script>
 <script src="js/jquery-dropdownMenu.js"></script>
+<script src="js/main.js"></script>
 <script src="js/weather.js"></script>
 
 </head>
@@ -63,13 +64,18 @@
             <img src="images/Cali7.jpg" alt="friscoBridge">
         </div>
 
-        <div class="storeLocation">
-            <p>Come visit us at our location and see our listed mountain biking trails, along with our latest assortment of gear and clothing.</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56979.12901764564!2d-122.47978877246523!3d37.75739231309931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1529985953751" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div id="mapArea">
+            <div class="storeLocation">
+                <p>Come visit us at our compnany's headquarters and see our grand list of bicycle sites, along with our latest assortment of gear and clothing. <u>Click the btton below to show our map!</u></p>
+                <iframe id="content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56979.12901764564!2d-122.47978877246523!3d37.75739231309931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1529985953751" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        <a id="show-map">Show Map</a>
         </div>
 
-        <div id="zipCode">
+        <h3 id="buttonText">Type any zipcode for today's weather!</h3>
+        <div id="zipCode" id="content">
         <input type="text" name="zipCode">
+
         <button type="button" onclick="fetchWeatherData()">Get Weather</button>
         <br>
         <br>

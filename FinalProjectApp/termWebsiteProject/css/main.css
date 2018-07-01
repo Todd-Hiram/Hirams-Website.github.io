@@ -317,6 +317,89 @@ legend {
     padding: 5px;
 }
 
+/*----------- transition photos -----------*/
+#photo1:hover {
+    transition: all 1s;
+    transform: scale(1.25);
+}
+
+#photo2:hover {
+    transition: all 1s;
+    transform: scale(1.25);
+}
+
+#photo3:hover {
+    transition: all 1s;
+    transform: scale(1.25);
+}
+
+#photo4:hover {
+    transition: all 1s;
+    transform: scale(1.25);
+}
+
+#photo5:hover {
+    transition: all 1s;
+    transform: scale(1.25);
+}
+
+#photo6:hover {
+    transition: all 1s;
+    transform: scale(1.25);
+}
+
+/*--------- button and map ------------*/
+#mapArea {
+    display: inline;
+    margin: 25px;
+    padding: 25%;
+}
+
+#content {
+  width: 100%;
+  background: #fff;
+  margin: 25%;
+  font-family: calibri;
+  font-size: 18px;
+  color: #444;
+  margin: 0 auto;
+  /*max-height:270px;*/
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+}
+
+#content.open {
+  max-height: 1000px;
+  -webkit-transition: max-height 0.7s;
+  -moz-transition: max-height 0.7s;
+  transition: max-height 0.7s;
+}
+
+#show-map {
+  display: block;
+  border-radius: 55%;
+  background: #1594e5;
+  color: #fff;
+  font-family: calibri;
+  display: block;
+  margin: 20px auto;
+  width: 140px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+#caliCity {
+    text-align: center;
+    padding: 50px;
+    margin: 0px;
+}
+    
 /*----------- FOOTER --------------*/
 footer {
     display: block;
