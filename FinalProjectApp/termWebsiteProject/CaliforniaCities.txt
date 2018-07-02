@@ -1,7 +1,7 @@
 [
 {
 "display": "San Francisco",
-"url": "https://www.moadsf.org/calendar/?gclid=CjwKCAjw9-HZBRAwEiwAGw0Qcfl-rxMLieFu1NETh40oFDMQ9RBMIcfz6PlAq-rl3jBZ9l21l2c32xoC748QAvD_BwE"
+"url": "https://www.sfcv.org/calendar?gclid=EAIaIQobChMIosmG_63_2wIVUZN-Ch09ZQt-EAAYAyAAEgKKqvD_BwE"
 },
 {
 "display": "San Diego",

@@ -348,6 +348,38 @@ legend {
     transform: scale(1.25);
 }
 
+#bike1:hover {
+    transition: all 1s;
+    transform: scale(2.5);
+}
+
+#bike2:hover {
+    transition: all 1s;
+    transform: scale(2.5);
+}
+
+#bike3:hover {
+    transition: all 1s;
+    transform: scale(2.5);
+}
+
+/*.bar {
+    margin: 10px 0px;
+    -webkit-transition: width 2s;
+    transition: width 2s;
+}
+
+.bar1, .bar2, .bar3, .bar4, .bar5 {
+    width: 5em;
+    height: 5em;
+}
+
+.bar1 {
+    background-color: #940D0B;
+    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+}*/
+
 /*--------- button and map ------------*/
 #mapArea {
     display: inline;
