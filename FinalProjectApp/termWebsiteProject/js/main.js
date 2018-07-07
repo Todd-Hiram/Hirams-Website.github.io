@@ -44,3 +44,28 @@ function myFunction(arr) {
     }
     document.getElementById("caliCity").innerHTML = out;
 }
+
+
+//This creates listeners
+function startup() {
+    let dropdown = document.getElementsByClassName('dropdown');
+
+    for(let element of dropdown) {
+        element.addEventListener('mouseover',function() {
+            this.classList.add('active');
+            let panel = this.nextElementSibling;
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        });
+        
+        element.addEventListener('mouseout',function() {
+            this.classList.remove('active');
+            let panel = this.nextElementSibling;
+            panel.style.maxHeight = null;
+        });
+    }
+}
+
+//event listener to fire the startup() funciton on load
+window.addEventListener('DOMContentLoaded', startup, false);
+
+//find the elements of the accordian and toggle css class on mouseover
