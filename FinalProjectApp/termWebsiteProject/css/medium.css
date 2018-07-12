@@ -25,7 +25,6 @@
 
 
 /*----------- MAIN ---------------------*/
-
     .storeLocation {
         display: block;
     }
@@ -40,11 +39,47 @@
         grid-column-gap: 250px;
         padding: 15px;
     }
+    
+    /*----------- transition photos -----------*/
+#photo1:hover {
+    transition: all 1s;
+    transform: scale(1.5);
+}
 
-    footer {
-        position: relative;
-        top: 4em;
-    }
+#photo2:hover {
+    transition: all 1s;
+    transform: scale(1.5);
+}
+
+#photo3:hover {
+    transition: all 1s;
+    transform: scale(1.5);
+}
+
+#photo4:hover {
+    transition: all 1s;
+    transform: scale(1.5);
+}
+
+#photo5:hover {
+    transition: all 1s;
+    transform: scale(1.5);
+}
+
+#photo6:hover {
+    transition: all 1s;
+    transform: scale(1.5);
+}
+
+#clip {
+    display: inline;
+    padding: 1em; 
+}
+
+footer {
+    position: relative;
+    top: 4em;
+}
 
 /*----------- FOOTER --------------------*/
 

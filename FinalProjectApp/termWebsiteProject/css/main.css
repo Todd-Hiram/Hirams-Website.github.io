@@ -94,7 +94,7 @@ nav ul li.active a {
 
 nav li {
     width: 190px;
-    height: 48px;
+    height: 40px;
     float: left;
     text-align: center;
     background: rgb(240, 240, 240);
@@ -317,34 +317,70 @@ legend {
 }
 
 /*----------- transition photos -----------*/
+#photo1 {
+    display: inline;
+    width: 100%;
+    padding: 1em; 
+}
+
 #photo1:hover {
     transition: all 1s;
-    transform: scale(1.25);
+    transform: scale(1.15);
+}
+
+#photo2 {
+    display: inline;
+    width: 100%;
+    padding: 1em; 
 }
 
 #photo2:hover {
     transition: all 1s;
-    transform: scale(1.25);
+    transform: scale(1.15);
+}
+
+#photo3 {
+    display: inline;
+    width: 100%;
+    padding: 1em; 
 }
 
 #photo3:hover {
     transition: all 1s;
-    transform: scale(1.25);
+    transform: scale(1.15);
+}
+
+#photo4 {
+    display: inline;
+    width: 100%;
+    padding: 1em; 
 }
 
 #photo4:hover {
     transition: all 1s;
-    transform: scale(1.25);
+    transform: scale(1.15);
+}
+
+#photo5 {
+    display: inline;
+    width: 100%;
+    padding: 1em; 
 }
 
 #photo5:hover {
     transition: all 1s;
-    transform: scale(1.25);
+    transform: scale(1.15);
+}
+
+#photo1 {
+    display: inline;
+    width: 100%;
+    padding: 1em; 
 }
 
 #photo6:hover {
     transition: all 1s;
-    transform: scale(1.25);
+    transform: scale(1.15);
 }
 
 /*--------- button and map ------------*/
@@ -446,6 +482,18 @@ p {
 
 #purchaseRent {
     float: right;
+}
+
+#calVideo {
+    display: inline-block;
+    margin:auto;
+    width: 100%;
+}
+
+#clip {
+    display: inline;
+    width: 100%;
+    padding: 1em; 
 }
     
 /*----------- FOOTER --------------*/
