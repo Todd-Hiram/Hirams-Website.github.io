@@ -53,7 +53,7 @@ header h2 {
 }
 
 /*----------- NAVIGATION --------------*/
-nav {
+/*nav {
     background-color: #143852;
 }
 
@@ -103,22 +103,24 @@ nav li {
     text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
     font-size: 14px;
     margin: 1px;
-}
+}*/
 
 /*------ HAMBURGER ------*/
-    * {
+/*    * {
         margin: 0;
     }
 
     h1 {
         margin-left: 0.75rem;
         margin-right: 0.75rem;
-        padding: 0.5rem;
+        padding: 0.5px;
     }
 
     .navigation {
+        
         list-style: none;
-        padding-left: 0;
+        padding: 0px;
+        margin: 0px;
     }
 
     .navigation li {
@@ -156,12 +158,9 @@ nav li {
     h1 {
         text-align: center;
     }
-
-    .hamburger {
-        float: left;
-        margin: 5px;
-        padding: 2px;
-
+    
+    #ham {
+        float: right;
     }
 
     .navigation {
@@ -186,8 +185,31 @@ nav li {
     .navigation a:hover {
         background-color: #205B85;
     }
+}*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #143852;
 }
 
+.topnav a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #205B75;
+  color: #C8460F;
+}
+
+.topnav a.active {
+  background-color: #205B75;
+  color: white;
+}
 /*----------- MAIN --------------*/
 * {
     box-sizing: border-box;
@@ -430,6 +452,7 @@ legend {
 }
 
 #caliCity {
+    font-size: 45px;
     text-align: center;
     padding: 50px;
     margin: 0px;
@@ -439,6 +462,7 @@ legend {
 p {
     text-align: center;
 }
+
 .hoverDrop {
     background-color: #eee;
     color: #444;
@@ -494,25 +518,6 @@ p {
     display: inline;
     width: 100%;
     padding: 1em; 
-}
-    
-/*----------- FOOTER --------------*/
-footer {
-    display: block;
-    letter-spacing: 1PX;
-    background-color: #657819;
-    padding: .5rem 2%;
-    text-align: center;
-    position: relative;
-    top: 2.5em;
-    color: #ffff;
-}
-
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /*----------- Cal Cycling Main Menu --------------------*/
@@ -869,4 +874,23 @@ input.toggle:checked ~ .menu .glass-reflection {
   -webkit-box-shadow: inset 0px -40px 150px -50px rgba(255, 255, 255, 0.15);
      -moz-box-shadow: inset 0px -40px 150px -50px rgba(255, 255, 255, 0.15);
           box-shadow: inset 0px -40px 150px -50px rgba(255, 255, 255, 0.15);
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    display: block;
+    letter-spacing: 1PX;
+    background-color: #657819;
+    padding: .5rem 2%;
+    text-align: center;
+    position: relative;
+    top: 2.5em;
+    color: #ffff;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }

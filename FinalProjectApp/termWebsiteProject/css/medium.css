@@ -10,16 +10,37 @@
 /*----------- HEADER ------------------*/
 
 /*----------- NAVIGATION --------------*/
+    .topnav {
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .topnav a {
+        display: inline;
+        color: ;
+        font-size: 10px;
+        text-align: center;
+        padding: 0px;
+        margin: 10px;
+
+    }
+    
     nav ul li {
         width: auto;
     }
 
     nav ul li a {
-        padding: .5rem 1rem;
+        padding: 1rem;
         height: 100%;
     }
 
     .hamburger {
+        display: block;
+        float: left;
+    }
+    
+    .navigation li {
         display: none;
     }
 

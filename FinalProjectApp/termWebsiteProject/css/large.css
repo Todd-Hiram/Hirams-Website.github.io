@@ -15,8 +15,18 @@
 
 
 /*----------- NAVIGATION --------------*/
-
-
+    .navigation a {
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .navigation li {
+        display: block;
+    }
+    
+    .hamburger {
+        display: none;
+    }
 
 /*----------- MAIN --------------*/
 main .grid {
