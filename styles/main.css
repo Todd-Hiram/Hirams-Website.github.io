@@ -536,6 +536,27 @@ button:hover {
     padding: 50px;
 }
 
+#objects {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+#methodTest {
+    color: #FF5100;
+}
+
+#add {
+    color: #FF5100;
+}
+
+#Cand1 {
+    color: #FF5100;
+}
+
 /*----------------- L05 JSON Parse and Stringify -------------------*/
 .json {
     display: block;
