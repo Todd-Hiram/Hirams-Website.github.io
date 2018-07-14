@@ -15,6 +15,7 @@
 <link href="css/normalize.css" rel="stylesheet">
 <!-- phone-default -->
 <link href="css/main.css" rel="stylesheet">
+<link href="css/cssAnimJS.css" rel="stylesheet">
 <!-- enhance-tablet -->
 <link href="css/medium.css" rel="stylesheet">
 <!-- enhance-desktop -->
@@ -26,6 +27,7 @@
 
 <script src="js/jquery-dropdownMenu.js"></script>
 <script src="js/main.js"></script>
+<script src="js/cssAnimJS.js"></script>
 </head>
 
 <body>
@@ -58,9 +60,30 @@
             <h2>REPAIR SHOP</h2>
             <p>YOUR MOUNTAIN MIKE NEEDS SOME WORK BEFORE HEADING OUR ON THE TRAIL? BRING IT BY AND WE'LL GET HER READY!</p>
         </div>
+<!---------------------------------------------------->
+    
+        <div id="dots" class="dots">
+            <div class="dot1 dot"></div>
+            <div class="dot2 dot"></div>
+            <div class="dot3 dot"></div>
+            <div class="dot4 dot"></div>
+            <div class="dot5 dot"></div>
+        </div>
 
-        <div class="repair">
-            <div><img src="images/SERVICE980350-min.jpg" alt="image01">
+<!--------------------------------------------------->   
+            <h3>onmousemove and onmouseout Event</h3>
+            <h2>Drag mouse over rectangle box to display the coordinates of X and Y: </h2>
+            <div class="repair" id="coordBox container3" onmousemove="mouseMove(event)" onmouseout="clearCoord()">
+                <div id="container2" ontouchmove="myFunction(event)">
+                    <img src="images/SERVICE980350-min.jpg" alt="image01">
+                </div>
+            </div>
+                
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+                
+        <div>
+        <div>
                 <h1>BRING YOUR BIKE TO US!</h1>
                 <ul>
                     <li>We do all repairs on a first come first serve basis. However, most repairs are completed within 2-3 business days.</li>

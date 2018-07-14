@@ -70,8 +70,8 @@ window.addEventListener('DOMContentLoaded', startup, false);
 
 //find the elements of the accordian and toggle css class on mouseover
 
-/*--------------------------------------------------*/
-
+/*---------------------------------------------------------*/
+//this animates the beating hearts on California Cycling page
 var heart = document.getElementsByClassName('heart')[1],
     pfx = ["webkit", "moz", "MS", "o", ""],
     hovered = false;
@@ -115,4 +115,23 @@ heart.onmouseout = function() {
   heart.style.msTransform = 'scale(1)';
   heart.style.OTransform = 'scale(1)';
   heart.style.transform = 'scale(1)';  
+}
+
+/*------------ Drag Mouse for Coordinates ------------*/
+function mouseMove(mouse) {
+    let x = mouse.clientX;
+    let y = mouse.clientY;
+    let coordinates = "Coordinate are: (" + x + ", " + y + ")";
+    document.getElementById("demo2").innerHTML = coordinates;
+}
+
+function clearCoord() {
+    document.getElementById("demo2").innerHTML = "";
+}
+
+/*------------ Drag Finger for Coordinates ------------*/
+function myFunction(event) {
+  let x = event.touches[0].clientX;
+  let y = event.touches[0].clientY;
+  document.getElementById("demo1").innerHTML = "Coordinate are: (" + x + ", " + y + ")";
 }

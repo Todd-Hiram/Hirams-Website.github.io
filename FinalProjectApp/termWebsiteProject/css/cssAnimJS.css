@@ -1,0 +1,12 @@
+canvas {
+  background-color: white;
+  width: 100%;
+}
+
+.wrapper {
+  background-color: #485058;
+  max-width: 800pxpx;
+  margin: 0 auto;
+  padding: 80px;
+  color: white;
+}

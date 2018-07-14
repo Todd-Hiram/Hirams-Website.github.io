@@ -2,7 +2,9 @@
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* { -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; }
 
 
 /*----------- BODY --------------*/
@@ -520,7 +522,72 @@ p {
     padding: 1em; 
 }
 
-/*----------- Cal Cycling Main Menu --------------------*/
+/*--------- dot decor ---------*/
+.dot {
+    display: inline-flex;
+    border-radius: 50%;
+    height: 20px;
+    margin: 20px;
+    width: 20px;
+}
+
+.dots {
+    align-items: center;
+    width: 97%;
+    padding: 15px;
+    margin: auto;
+}
+
+.dot1 {
+    -webkit-animation:right 1s infinite ease-in-out;
+    background-color: #940D0B;
+    -moz-animation: right 1s infinite ease-in-out;
+    animation: right 1s infinite ease-in-out;
+}
+
+.dot2 {
+    -webkit-animation: left 1.1s infinite ease-in-out;
+    background-color: #FF5100;
+    -moz-animation: left 1.1s infinite ease-in-out;
+    animation: left 1s infinite ease-in-out;
+}
+
+.dot3 {
+    -webkit-animation: right 1.05s infinite ease-in-out;
+    background-color: #105761;
+    -moz-animation: right 1.05s infinite ease-in-out;
+    animation: right 1.05s infinite ease-in-out;
+}
+
+.dot4 {
+    -webkit-animation: left 1.15s infinite ease-in-out;
+    background-color: #940D0B;
+    -moz-animation: left 1.15s infinite ease-in-out;
+    animation: left 1.15s infinite ease-in-out;
+}
+
+.dot5 {
+    -webkit-animation: right 1.1s infinite ease-in-out;
+    background-color: #FF5100;
+    -moz-animation: right 1.1s infinite ease-in-out;
+    animation: right 1.1s infinite ease-in-out;
+}
+
+/*--------------------------------------------------------*/
+#container3 {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+
+#coordBox {
+    border: 1px solid #105761;
+    width: 400px;
+    height: 300px;
+}
+
+/*--------------- Cal Cycling Main Menu ------------------*/
 @import url("https://fonts.googleapis.com/css?family=Lato");
 
 *,
@@ -1030,6 +1097,68 @@ input{
   50% { -o-transform: scale(1.3); }
   100% { -o-transform: scale(1); }  
 }
+
+/*---------------------- Keyframes ---------------------*/
+@-webkit-keyframes left {
+    0% {
+        -webkit-transform: translate(25px);
+    }
+    50% {
+        -webkit-transform: translate(-25px);
+    }
+    100% {
+        -webkit-transform: translate(25px);
+    }
+}
+
+@-moz-keyframes right {
+    0% {
+        -moz-transform: translate(-25px);
+    }
+    50% {
+        -moz-transform: translate(25px);
+    }
+    100% {
+        -moz-transform: translate(-25px);
+    }
+}
+
+@-moz-keyframes left {
+    0% {
+        -moz-transform: translate(25px);
+    }
+    50% {
+        -moz-transform: translate(-25px);
+    }
+    100% {
+        -moz-transform: translate(25px);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translate(-25px);
+    }
+    50% {
+        transform: translate(25px);
+    }
+    100% {
+        transform: translate(-25px);
+    }
+}
+
+@keyframes left {
+    0% {
+        transform: translate(25px);
+    }
+    50% {
+        transform: translate(-25px);
+    }
+    100% {
+        transform: translate(25px);
+    }
+}
+
 
 /*----------- FOOTER --------------*/
 footer {
