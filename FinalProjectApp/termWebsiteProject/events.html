@@ -26,7 +26,6 @@
 
 <script src="js/jquery-dropdownMenu.js"></script>
 <script src="js/main.js"></script>
-
 </head>
 <body>
 
@@ -59,8 +58,21 @@
                 <h3>Click below for city event information!</h3>
                 <div id="caliCity"></div>
         </section>
-    </main>
+        
+        <section >
+            <h2>What Else Do You Want TO Do In Cali?</h2>
+            <h3>Add To Your To-Do List!</h3>
+            <div id="toDOList">
+                <input name = "todo" type="text" id = "input" placeholder="Type a Do!">
+                <button id = "button">Add To List</button>
+                <button id = "clear">Clear List</button>    
+                <button id = "remove">Remove Last Event</button>
 
+                <ul id = "list"></ul>
+            </div>
+        </section>
+    </main>
+        <script src="js/toDoList2.js"></script>
 <!-- FOOTER HERE -->
     <footer>
         <p>&copy; 2017 &bull; <a href="/FinalProjectApp/termWebsiteProject/CaliforniaCycling.html">California Cycling</a> &bull; Hiram Todd &bull; 123-555-6789</p>

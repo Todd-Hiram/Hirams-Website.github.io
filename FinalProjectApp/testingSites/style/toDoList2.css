@@ -1,0 +1,22 @@
+input{
+  color: #228;
+  display: inline;
+}
+
+.todo-list-item{
+  padding: 4px;
+}
+
+.todo-list-text{
+  transition: .1s ease-out;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.todo-list-text:hover{
+  color: orange;
+}
+
+.done{
+  text-decoration: line-through;
+  color: pink;
+}
