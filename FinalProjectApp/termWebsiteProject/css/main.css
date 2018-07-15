@@ -276,7 +276,7 @@ main .storeLocation {
     padding: 15px;
 }
 
-main .pastEvents, .upcomingEvents {
+main .upcomingEvents {
     font-size: 20px;
     margin: 60px 50px;
 }
@@ -944,16 +944,21 @@ input.toggle:checked ~ .menu .glass-reflection {
 }
 
 /*------------------ To Do List -------------------*/
-input{
+input {
   color: #228;
   display: inline;
 }
 
-.todo-list-item{
+.list {
+    display: block;
+    float: left;
+}
+
+.todo-list-item {
   padding: 4px;
 }
 
-.todo-list-text{
+.todo-list-text {
   transition: .1s ease-out;
   cursor: pointer;
   margin-right: 20px;
@@ -962,7 +967,7 @@ input{
   color: orange;
 }
 
-.done{
+.done {
   text-decoration: line-through;
   color: pink;
 }

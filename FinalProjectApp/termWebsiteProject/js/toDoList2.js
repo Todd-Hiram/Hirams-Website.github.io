@@ -26,7 +26,7 @@ function createListElement() {
     this.parentNode.remove();
   })
  
-  let li = createElement("li", "", "todo-list-item" );
+  var li = createElement("li", "", "todo-list-item" );
   
   li.appendChild(text);
   li.appendChild(removeItem);
