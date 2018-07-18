@@ -453,12 +453,45 @@ legend {
   padding: 10px;
 }
 
-#caliCity {
+#cityEvents {
+    display: block;
     font-size: 45px;
-    text-align: center;
+    text-align: justify;
     padding: 50px;
     margin: 0px;
 }
+
+/*----------------------- Sotrm Center -----------------*/
+
+main .forecast {
+        visibility: visible;
+        background-color: #940D0B;
+        border: 1px solid black;
+        position: relative;
+        top: 8px;
+    }
+
+    main th, td {
+        border: 1px solid black;
+        background-color: #F0DCB9;
+    }
+
+    main .conditions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    article {
+        position: relative;
+        top: 15px;
+    }
+
+    form {
+        position: relative;
+        top: 10px;
+    }
+
 
 /*----------------- shop bike site --------------------*/
 p {
@@ -506,7 +539,15 @@ p {
     width: 75%;
 }
 
-#purchaseRent {
+#purchaseRent1 {
+    float: right;
+}
+
+#purchaseRent2 {
+    float: right;
+}
+
+#purchaseRent3 {
     float: right;
 }
 
@@ -949,11 +990,6 @@ input {
   display: inline;
 }
 
-.list {
-    display: block;
-    float: left;
-}
-
 .todo-list-item {
   padding: 4px;
 }
@@ -963,6 +999,7 @@ input {
   cursor: pointer;
   margin-right: 20px;
 }
+
 .todo-list-text:hover{
   color: orange;
 }

@@ -135,3 +135,8 @@ function myFunction(event) {
   let y = event.touches[0].clientY;
   document.getElementById("demo1").innerHTML = "Coordinate are: (" + x + ", " + y + ")";
 }
+
+/*-------------- California Weather Rating -------------*/
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}

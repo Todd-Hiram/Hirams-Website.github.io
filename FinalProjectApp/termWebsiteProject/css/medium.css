@@ -114,6 +114,36 @@
   animation-dely:1s;
 }
     
+/*----------------------------*/
+        main .forecast {
+        visibility: visible;
+        background-color: #940D0B;
+        border: 1px solid black;
+        position: relative;
+        top: 8px;
+    }
+
+    main th, td {
+        border: 1px solid black;
+        background-color: #F0DCB9;
+    }
+
+    main .conditions {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    article {
+        position: relative;
+        top: 15px;
+    }
+
+    form {
+        position: relative;
+        top: 10px;
+    }
+    
 /*----------- transition photos -----------*/
 #photo1:hover {
     transition: all 1s;

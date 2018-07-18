@@ -1,4 +1,4 @@
-[
+var myArray = [
 {
 "display": "San Francisco",
 "url": "https://www.sfcv.org/calendar?gclid=EAIaIQobChMIosmG_63_2wIVUZN-Ch09ZQt-EAAYAyAAEgKKqvD_BwE"
@@ -24,3 +24,5 @@
 "url": "https://festivalnapavalley.org/about-us/gallery/"
 }
 ]
+
+link: https://www.w3schools.com/js/js_json_http.asp

@@ -1,0 +1,148 @@
+    <!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="page description placeholder">
+        <meta name="author" content="Hiram Todd">
+
+
+        <!-- This start file was build by Paul Cheney  -->
+        <title>Final App Project by Hiram Todd</title>
+
+        <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- STYLE SHEETS -->
+        <link href="css/normalize.css" rel="stylesheet">
+        <!-- phone-default -->
+        <link href="css/main.css" rel="stylesheet">
+        <!-- enhance-tablet -->
+        <link href="css/medium.css" rel="stylesheet">
+        <!-- enhance-desktop -->
+        <link href="css/large.css" rel="stylesheet">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+    <script src="js/main.js"></script>
+
+    </head>
+
+    <body>
+    <!-- HEADER HERE -->
+    <header>
+                    <div>
+                    <h1>California Cycling</h1>
+                    <h2>Bikes and Sites! What a pair!</h2>
+                </div>
+    </header>
+
+
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <div class="topnav">
+            <a href="../../index.html">HOME</a>
+            <a href="CaliforniaCyclingMenu.html">MAIN MENU</a>
+            <a href="CaliforniaCycling.html">CALIFORNIA CYCLING</a>
+            <a href="adventureTour.html">ADVENTURE TOURS</a>
+            <a href="events.html">EVENTS</a>
+            <a href="shop.html">SHOP BIKES</a>
+            <a href="repairShop.html">REPAIR SHOP</a>
+            <a href="#" class="active">STORM CENTER</a>
+            <a href="contactForm.html" class="active">CONTACT</a>
+        </div>
+    </nav>
+
+
+<!-- CONTENT HERE -->
+<main>
+<div class="clearfix">
+    <h2>Storm Center</h2>
+    <h3>Report Unusual Storm Activity</h3>
+
+    <div class="row">
+        <div class="left">
+
+            <form action="FormToEmail.php" method="post" enctype="multipart/form-data" name="storms" id="stormForm">
+
+                <!--<form action="FormToEmail.html" method="post" encrypt="multipart/form-data" name="email" id="storm" >-->
+
+                <fieldset>
+                    <legend><span>Personal Information</span></legend>
+                    <label><b><span>Fullname:</span></b><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{3,99}" required ></label>
+
+                    <label><b><span>Zip Code:</span></b><input name="zip" type="text" value="" placeholder="zip" pattern="[0-9._]{2,5}" required ></label>
+
+                    <label><b><span>Email:</span></b><input name="email" type="email" value="" placeholder="message@email.com" required ></label>
+
+                    <label><b><span>Phone:</span></b><input name="phone" type="tel" value="" placeholder="(555) 555-7890" pattern="[0-9]{10,20}" required ></label>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend><span>Unusual Storm Activity</span></legend>
+                    <label><b><span>Storm Date:</span></b><input type="text" value="date"></label>
+
+                    <label><b><span>Storm Type:</span></b><input name="stormTypes" type="text" placeholder="Select..." list="stormTypes" ></label>
+
+                    <datalist id="stormTypes">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+
+                    <label><b><span>Storm Severity Range:</span></b><input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">5</span></label>
+
+                    <label><b><span>Storm Regions:</span></b><input name="regions" type="text" placeholder="Select Region..." list="regions"></label>
+
+                    <datalist id="regions">
+                        <option value="San Diego"></option>
+                        <option value="San Francisco"></option>
+                        <option value="Anaheim"></option>
+                        <option value="Laguna Beach"></option>
+                        <option value="Monterey"></option>
+                        <option value="Napa Valley"></option>
+                    </datalist>
+
+                    <label><b><span>Danger Level:</span></b></label>
+                    <label id="danger"><span>Are you in any mortal danger?</span></label>
+                    <input type="radio" name="q1" value="Yes"> Yes<br>
+                    <input type="radio" name="q1" value="No" checked> No<br>
+                </fieldset>
+
+                <fieldset class="message"><p>Message:</p>
+                    <textarea rows="4" cols="38" placeholder="Type here...">
+
+                    </textarea>
+                </fieldset>
+
+                <input type="submit" value="Submit!" class="submitBtn">
+
+                <input name="subject" type="hidden" value="Abnormal Weather Patterns" >
+                <input name="redirect" type="hidden" value="thanksTest.html" >
+            </form>
+        </div>
+
+    </div>
+
+
+    </div><!-- end of a row -->
+
+</main>
+
+<!-- FOOTER HERE -->
+<footer>
+    <aside>
+     123 Main St. Franklin, MU 83454
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather Me! | Tue Jul 17 2018</footer>
+
+
+</body>
+
+</html>
