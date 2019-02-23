@@ -457,6 +457,7 @@ legend {
     display: block;
     font-size: 45px;
     text-align: justify;
+    height: 550px;
     padding: 50px;
     margin: 0px;
 }
